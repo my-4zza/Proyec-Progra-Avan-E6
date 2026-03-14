@@ -54,9 +54,6 @@ El robot utiliza una suite de sensores para interactuar con su entorno de manera
 2.  **Línea (Pololu QTR-8RC):** Arreglo de sensores infrarrojos para seguimiento preciso de rutas.
 3.  **Obstáculos (FC-51):** Sensor infrarrojo para detección de proximidad y prevención de colisiones.
 
-> [!TIP]
-> **Conectividad:** Se requiere un **Paquete de Jumpers** para realizar el conexionado entre los módulos, asegurando que las tierras (GND) estén debidamente compartidas para evitar ruido en las señales.
-
 ---
 
 ## Próximos Pasos
