@@ -1,0 +1,47 @@
+# ==========================================
+# Archivos del Sistema Operativo
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Archivos de C / C++ (Microcontroladores)
+# ==========================================
+*.o
+*.obj
+*.exe
+*.out
+*.hex
+*.bin
+
+# ==========================================
+# Archivos de Python
+# ==========================================
+__pycache__/
+*.pyc
+venv/
+env/
+.pytest_cache/
+
+# ==========================================
+# Archivos de software de FPGA (Vivado/Quartus)
+# ==========================================
+*.bit
+*.sof
+*.jou
+*.log
+*.pb
+*.wdb
+
+# ==========================================
+# Archivos pesados o multimedia (Regla de la rúbrica)
+# ==========================================
+*.mp4
+*.avi
+*.zip
+*.rar
+*.tar.gz
+*.csv
+*.db
+*.sqlite
