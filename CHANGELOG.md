@@ -1,10 +1,4 @@
-___________________________________________________________________________________________________________________________________________
-#HISTORIAL DE VERSIONES
-
-En este apartado llevaremos un registro detallado de todos los cambios realizados en archivos y carpetas a lo largo del tiempo, donde 
-visualizaremos quién hizo cambios, qué se modificó y cuándo, facilitando la trazabilidad, colaboración y la reversión a estados anteriores.
-
-___________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________
 ## HISTORIAL DE VERSIONES
 
 En este apartado llevaremos un registro detallado de todos los cambios realizados en archivos y carpetas a lo largo del tiempo, donde visualizaremos quién hizo cambios, qué se modificó y cuándo, facilitando la trazabilidad, colaboración y la reversión a estados anteriores.
