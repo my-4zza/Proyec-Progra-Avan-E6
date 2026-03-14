@@ -54,7 +54,7 @@ Un carrito que avanza por una línea negra se detiene automáticamente cuando le
                                                                                        (Inalámbrico)
                                                                                              |
                                                                                  +-----------v-----------+
-                                                                                 | PC (Laptop Acer)      |
+                                                                                 | PC      |
                                                                                  |-----------------------|
                                                                                  | - Script de Python    |
                                                                                  | - Terminal / Consola  |
