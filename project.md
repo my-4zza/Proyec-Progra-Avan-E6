@@ -12,6 +12,18 @@ Diseñar y adaptar módulo de selección por color a un carrito seguidor de lín
 
 
 ## Producto Mínimo Viable (MVP)
+Un carrito que avanza por una línea negra se detiene automáticamente cuando le pones una pieza enfrente, enciende el servo para separarla hacia la izquierda o la derecha (dependiendo de si es un color u otro), y manda un mensaje de texto por Bluetooth a la computadora.
+
+1. Navegación Básica (Hardware)
+•	El robot sigue una pista sencilla (un óvalo o una línea recta con una curva ligera).
+•	Movimiento a velocidad constante baja-media, un control básico (si sale por la derecha, girar a la izquierda) es suficiente.
+2. Clasificación Binaria (El corazón del FPGA)
+•	El sensor de color (TCS3200) solo está calibrado para distinguir dos colores muy contrastantes (Rojo vs. Azul, o Blanco vs. Negro).
+•	El servomotor SG90 solo tiene dos posiciones programadas (0 grados para un color, 180 grados para el otro).
+3. Software "Crudo" (Python)
+•	El módulo Bluetooth envía caracteres simples (Ejemplo: R para Rojo, A para Azul).
+•	El script de Python corriendo en tu Acer simplemente lee el puerto COM y lo imprime en la consola de comandos/terminal: "Pieza ROJA detectada. Total: 1".
+
 
 ## Diagrama a Bloques del Hardware
 
