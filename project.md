@@ -1,10 +1,14 @@
 # Carro Seguidor de Línea con Detección de Colores
 
-## Objetivos
-
 **Objetivo General:**
+Diseñar y adaptar módulo de selección por color a un carrito seguidor de línea, implementando un FPGA, con lenguaje Python.
 
 **Objetivos Específicos:**
+-	Diseñar la estructura del seguidor de línea para la capacidad de clasificar objetos por color
+-	Programar el software para el seguimiento de líneas y clasificación de colores mediante un sensor
+-	Integrar el Software y hardware para controlar los moteres de carro 
+-	Realizar pruebas del funcionamiento del carro, mediante pruebas de circuitos con líneas con obstáculos 
+
 
 ## Producto Mínimo Viable (MVP)
 
