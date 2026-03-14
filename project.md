@@ -10,9 +10,9 @@
 
 ## Diagrama a Bloques del Hardware
 
-##Lista de componentes
+## Lista de componentes
 
-##roles
+## Roles
 
 ### Cronograma del Proyecto
 
