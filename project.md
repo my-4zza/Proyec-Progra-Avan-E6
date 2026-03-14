@@ -16,6 +16,25 @@ Diseñar y adaptar módulo de selección por color a un carrito seguidor de lín
 ## Diagrama a Bloques del Hardware
 
 ## Lista de componentes
+### Lista de Materiales (BOM)
+
+| Categoría | Material / Cantidad | Función | Precio |
+| :--- | :--- | :--- | :--- |
+| **Cerebro y comunicación** | Tarjeta FPGA | Matriz de puertas lógicas programables. | $650 |
+| | Módulo Bluetooth HC-05 | Para enviar el inventario en tiempo real a tu código en Python. | $148 |
+| | Módulo conversor de nivel lógico (Level Shifter) 3.3V a 5V | Este chip protege el FPGA si se usan sensores que manden señales de 5V. | $66 |
+| **Sensores (Entradas)** | Sensor de color TCS3200 | Funciona para clasificación de colores. | $200 |
+| | Pololu QTR-8RC | Es el sensor que ayuda a hacer el seguidor de línea. | $80 |
+| | Sensor infrarrojo de obstáculos FC-51 | Para detectar si el cubo o pelota entra al mecanismo y el FPGA empiece a leer el color. | $140 |
+| **Actuadores (Salidas)** | Módulo Puente H TB6612FNG | Para funcionamiento del carrito. | $120 |
+| | 2 Motorreductores DC | Son para el funcionamiento de las llantas. | $170 |
+| | 2 Servomotores SG90 | Para el brazo recolector. | $100 |
+| **Chasis y mecánica** | Kit de chasis 2WD | Estructura o base del carro. | $175 |
+| | Materiales para el brazo recolector | Los materiales de los que haremos el brazo. | Aún pendiente |
+| **Energía (Alimentación)** | 4 Baterías Li-Ion 18650 | Para tener buena corriente. | $500 |
+| | 1 Portapilas para 18650 | Para poner las pilas ahí. | $100 |
+| | Regulador MP1584 | Para reducir el voltaje a 3.3 o 5v y no quemar algunos componentes. | $70 |
+| | Paquetes de jumpers | Para conexión. | $140 |
 
 ## Roles
 
