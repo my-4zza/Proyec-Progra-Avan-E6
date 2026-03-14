@@ -46,3 +46,14 @@ Para que nuestro historial sea fácil de leer, usaremos el formato estándar de 
 ## 4. Estilo de Código
 * Mantener el código en C/Python bien comentado, especialmente en la lógica de control de los motores y los umbrales de los sensores.
 * Usar nombres de variables descriptivos (ej. `velocidadMotorIzquierdo` en lugar de `v1`).
+
+## 5. Manejo de Archivos Grandes (Git LFS)
+
+Para mantener el historial del repositorio rápido y eficiente, está estrictamente prohibido subir archivos binarios pesados (como videos de prueba largos, instaladores, o datasets masivos) directamente con los commits normales.
+Si por algún motivo crítico es necesario subir un archivo que supere los 50MB (como un modelo CAD 3D de la estructura o bases de datos de entrenamiento para la detección de colores), el integrante deberá utilizar **Git LFS (Large File Storage)**.
+
+**Cómo usar Git LFS en este proyecto:**
+1. Instala la herramienta en tu consola: `git lfs install`
+2. Dile a Git qué tipo de archivo pesado vas a subir (ejemplo para un video): `git lfs track "*.mp4"`
+3. Asegúrate de hacer commit al archivo `.gitattributes` que se generará automáticamente.
+4. Sube tu archivo pesado con los comandos `git add`, `git commit` y `git push` de forma habitual.
