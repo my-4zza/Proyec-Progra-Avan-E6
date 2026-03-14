@@ -27,6 +27,44 @@ Un carrito que avanza por una línea negra se detiene automáticamente cuando le
 
 ## Diagrama a Bloques del Hardware
 
+| Categoría | Componente | Descripción |
+| :--- | :--- | :--- |
+| **Cerebro** | **Tarjeta FPGA** | Procesamiento lógico central y control de periféricos. |
+| **Control** | **Módulo Bluetooth HC-05** | Interfaz para control inalámbrico y recepción de comandos. |
+| **Interfaz** | **Level Shifter (3.3V a 5V)** | Conversor de nivel lógico para proteger los pines de la FPGA. |
+| **Estructura** | **Kit de chasis 2WD** | Base mecánica con dos ruedas de tracción y una rueda loca. |
+
+---
+
+## Sistema de Alimentación y Potencia
+
+Para garantizar la autonomía y estabilidad del robot, se utiliza una configuración de celdas de litio con regulación de voltaje:
+
+* **Baterías:** 4x Li-Ion 18650 (Alta densidad energética).
+* **Soporte:** 1x Portapilas para celdas 18650.
+* **Regulación:** Módulo **Regulador MP1584** (Step-down para ajustar el voltaje de operación).
+
+---
+
+## Sensores Integrados
+
+El robot utiliza una suite de sensores para interactuar con su entorno de manera inteligente:
+
+1.  **Color (TCS3200):** Permite identificar superficies o marcas de colores específicos.
+2.  **Línea (Pololu QTR-8RC):** Arreglo de sensores infrarrojos para seguimiento preciso de rutas.
+3.  **Obstáculos (FC-51):** Sensor infrarrojo para detección de proximidad y prevención de colisiones.
+
+> [!TIP]
+> **Conectividad:** Se requiere un **Paquete de Jumpers** para realizar el conexionado entre los módulos, asegurando que las tierras (GND) estén debidamente compartidas para evitar ruido en las señales.
+
+---
+
+## Próximos Pasos
+- [ ] Implementar la máquina de estados en VHDL/Verilog.
+- [ ] Configurar los tiempos de muestreo del sensor QTR-8RC.
+- [ ] Establecer la comunicación UART con el módulo HC-05.
+
+
 ## Lista de componentes
 ### Lista de Materiales (BOM)
 
