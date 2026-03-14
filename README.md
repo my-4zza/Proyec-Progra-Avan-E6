@@ -12,11 +12,26 @@ Este proyecto consiste en un carro seguidor de línea autónomo mejorado con la 
 3. Carga el código principal ubicado en la carpeta `src/` a tu microcontrolador usando el IDE correspondiente.
 
 ## Estructura del Repositorio
-* `src/` — Código fuente principal del robot y módulos de control (motores, sensores).
-* `docs/` — Documentación visual, diagramas de bloques y esquemas de montaje físico.
-* `hardware/` — Lista de materiales (BOM) y detalles electrónicos.
-* `tests/` — Códigos de prueba individuales (calibración de color, prueba de motores).
-* `results/` — Mediciones de rendimiento y datos de precisión del clasificador.
+### Archivos Raíz (Top-level)
+* **`README.md`** — Descripción general, instrucciones de ejecución y guía del repositorio.
+* **`PROJECT.md`** — Título, objetivos, MVP, diagrama a bloques, componentes y cronograma.
+* **`AUTHORS.md`** — Lista de integrantes del equipo y correos institucionales.
+* **`CHANGELOG.md`** — Historial detallado de versiones y cambios por archivo.
+* **`LICENSE`** — Licencia de uso del proyecto.
+* **`.gitignore`** — Patrones para excluir binarios, datos pesados y archivos temporales.
+* **`CONTRIBUTING.md`** — Guía de commits, ramas y manejo de archivos grandes (Git LFS).
+
+### Carpetas del Proyecto
+* **`src/`** — Código fuente principal: `python_no_opt.py` y `c_no_opt.c` (incluye módulos auxiliares).
+* **`docs/`** — Documentación visual: diagramas de bloques, fotos de montaje físico y datasheets.
+* **`results/`** — Mediciones de rendimiento: tiempos de ejecución (`csv`), salidas crudas y gráficas comparativas.
+* **`tests/`** — Casos de prueba: pequeños verificables, escalados y script `run_tests.sh`.
+* **`hardware/`** — Detalles físicos: Lista de materiales (BOM) y esquemáticos electrónicos.
+* **`scripts/`** — Utilidades de automatización:
+    * `bench_python.sh` / `bench_c.sh`: Automatización de pruebas de rendimiento.
+    * `setup_env.sh`: Preparación del entorno y dependencias.
+    * `deploy.sh`: Instrucciones para flashear el hardware.
+* **`data/`** — Datos de entrada grandes y registros de telemetría (gestionado con Git LFS).
 
 ## Enlaces Rápidos a Entregables
 * Detalles técnicos, Objetivos y Cronograma (PROJECT.md)](./PROJECT.md)
