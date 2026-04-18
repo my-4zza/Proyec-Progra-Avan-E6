@@ -1,4 +1,4 @@
-## 🛠️ Lista de Componentes y Hardware 
+## Lista de Componentes y Hardware 
 
 Este proyecto utiliza una arquitectura de control basada en FPGA para gobernar un chasis móvil de 4 ruedas. A continuación, se detalla la función de cada elemento físico del sistema:
 
@@ -6,7 +6,9 @@ Versión 1.0.0
 Fecha: 17/04/2026
 
 * **FPGA Tang Nano 9K:** Es el "cerebro" digital del carrito. Se encarga de ejecutar la lógica de control, procesar las lecturas del sensor LM393 y generar las señales de control (como PWM y dirección) necesarias para mover los motores a través del módulo L298N.
+
 * **Módulo Controlador de Motores L298N (Puente H):** Actúa como el intermediario de potencia. Recibe las señales lógicas de bajo voltaje de la Tang Nano 9K y suministra la corriente de 12V necesaria para hacer girar los motores en ambas direcciones.
+
 * **Regulador de Voltaje LM7805:** Es el encargado de proteger la electrónica sensible. Toma los 12V provenientes de las baterías y los reduce a un voltaje lineal y estable de 5V, con el cual se alimenta la Tang Nano 9K y el sensor.
 * **Sensor Óptico/Infrarrojo (con comparador LM393):** Sirve como los "ojos" del carrito. Detecta la presencia de líneas u obstáculos (según la configuración) y envía una señal digital (1 o 0) a la FPGA para que tome decisiones de navegación.
 * **Portapilas (12V):** La fuente de alimentación principal. Aloja 3 baterías que en serie suman 12V, proporcionando la energía "cruda" para los motores y la entrada del regulador de voltaje.
