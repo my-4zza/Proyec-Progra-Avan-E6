@@ -1,0 +1,29 @@
+// codigo cst v1.0.0
+IO_LOC "sensor_izq" 38; 
+IO_PORT "sensor_izq" IO_TYPE=LVCMOS33;
+
+IO_LOC "sensor_der" 39; 
+IO_PORT "sensor_der" IO_TYPE=LVCMOS33;
+
+
+IO_LOC "sensor_movimiento" 33; 
+IO_PORT "sensor_movimiento" IO_TYPE=LVCMOS33;
+
+
+
+IO_LOC "ENA" 25;
+IO_PORT "ENA" IO_TYPE=LVCMOS33;
+
+
+IO_LOC "IN1" 26;
+IO_PORT "IN1" IO_TYPE=LVCMOS33;
+IO_LOC "IN2" 27;
+IO_PORT "IN2" IO_TYPE=LVCMOS33;
+
+IO_LOC "IN3" 28;
+IO_PORT "IN3" IO_TYPE=LVCMOS33;
+IO_LOC "IN4" 29;
+IO_PORT "IN4" IO_TYPE=LVCMOS33;
+
+IO_LOC "ENB" 30;
+IO_PORT "ENB" IO_TYPE=LVCMOS33;
