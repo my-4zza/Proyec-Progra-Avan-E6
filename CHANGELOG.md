@@ -25,3 +25,4 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `docs/` | v1.1 -> v1.2 | Actualización del diagrama de flujo con la lógica de detección de colores. | 13/03/2026 | Hernández García Juan Carlos (`jhernandezgarcia887-del`) |
 | `docs/` | v1.1 -> v1.2 | documentar ensamblaje físico y ruteo electrico. | 17/04/2026 | Cid García Alfredo (`Alfredxs19`) |
 | `docs/Evidencias_Ensamblaje` | v1.0 | Documentación de imagenes del carrito | 17/04/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`)  |
+| `PROJECT.md` | v1.3 -> v1.4 | realizo recoleccion de datos poniendo en practica en fisico del corro simulado. | 17/04/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
