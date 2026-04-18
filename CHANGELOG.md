@@ -26,3 +26,5 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `docs/` | v1.1 -> v1.2 | documentar ensamblaje físico y ruteo electrico. | 17/04/2026 | Cid García Alfredo (`Alfredxs19`) |
 | `docs/Evidencias_Ensamblaje` | v1.0 | Documentación de imagenes del carrito | 17/04/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`)  |
 | `PROJECT.md` | v1.3 -> v1.4 | realizo recoleccion de datos poniendo en practica en fisico del corro simulado. | 17/04/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
+| `PROJECT.md` | v1.3. -> v1.4 | representación de los resultados que se obtuviweron en una presentación | 13/03/2026 | Pérez González Azael (`my-4zza`) |
+| `PROJECT.md` | v0.2 -> v1.3 | represemtacion del diagrama de las conecciones de la nano fpga . | 13/03/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
