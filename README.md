@@ -10,6 +10,7 @@ Este proyecto consiste en un carro seguidor de línea autónomo mejorado con la 
 1. Revisa la lista de componentes en la carpeta `hardware/` para ensamblar el chasis, los sensores y la electrónica.
 2. Consulta los esquemas de conexión en `docs/`.
 3. Carga el código principal ubicado en la carpeta `src/` a tu microcontrolador usando el IDE correspondiente.
+
 ## [17-04-2026] - Ensamblaje y Ruteo de Potencia/Control
 
 ### Agregado y Configurado
@@ -32,6 +33,17 @@ Este proyecto consiste en un carro seguidor de línea autónomo mejorado con la 
 * **Ruteo de Control Lógico (FPGA $\rightarrow$ L298N):** * Se cableó el bus de datos desde los bancos I/O de la FPGA hacia los pines direccionales del controlador de motores.
   * **Asignación:** Pines asignados a `IN1` e `IN2` para el control de sentido del par motor izquierdo; `IN3` e `IN4` para el par motor derecho.
   * **Estado actual de PWM:** Los habilitadores `ENA` y `ENB` se mantuvieron con *jumpers* de hardware a 5V lógicos, configurando el sistema para pruebas iniciales con un control "Todo o Nada" (On/Off combinacional) antes de implementar señales PWM en Verilog.
+
+## [17-04-2026] - Mejoras Futuras y Cambios Necesarios
+
+* **Cambio del chasis:** * Se Observa que se nesecita un cambio de chasis para un mejor desplazamiento debido a que el usado actualmente presenta fallas al momento de tomar vueltas o curvas por su lento movimiento y dificultad para hacerlo de manera eficiente.
+  
+* **Mejoras Para su Movilidad:** * Tras hacer el cambio del chasis se haran los cambios necesarios para que de una manera mas facil permita esto cambios de direccion al momento de dar giros para su manejo
+* Debido a sus cuatro ruedas que no permiten su maxima eficacia de maniobrabilidad,se hara un cambio a un modelo de 3 ruedas para mayor eficacia de manejo y control de direccion para este caso.
+
+ * **Obtencion de Materiales:** Se buscaran los materiales necesarios para hacer las mejoras que se presenten o posibles defectos de piezas que se tengan presentes en un futuro
+ * Se buscaran los materiales necesarios para la creacion del brazo y su movilidad del mismo
+ * Se buscara la manera de tener mas espacio para poder ubicar el brazo movible 
   
 ## Estructura del Repositorio
 
