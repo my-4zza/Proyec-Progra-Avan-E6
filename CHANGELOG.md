@@ -23,3 +23,4 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `PROJECT.md` | v1.3 -> v1.4 | Actualización y corrección de la información del diagrama de bloques. | 13/03/2026 | Hernández García Juan Carlos (`jhernandezgarcia887-del`) |
 | `CHANGELOG.md` | v1.0 -> v1.1 | Actualización de formato, títulos y subtítulos del historial. | 13/03/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `docs/` | v1.1 -> v1.2 | Actualización del diagrama de flujo con la lógica de detección de colores. | 13/03/2026 | Hernández García Juan Carlos (`jhernandezgarcia887-del`) |
+| `docs/` | v1.1 -> v1.2 | documentar ensamblaje físico y ruteo electrico. | 17/04/2026 | Cid García Alfredo (`Alfredxs19`) |
