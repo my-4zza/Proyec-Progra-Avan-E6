@@ -13,5 +13,5 @@
 <img width="600" height="300" alt="a07225ae-0e10-4ef7-8fda-af006296129d" src="https://github.com/user-attachments/assets/103eec07-2478-4eb2-8940-bf9bc2f7f817" />
 
 # Porta pilas 
-# 3 pilas de 12v para alimentar el circuito
-<img width="384" height="451" alt="1acfec41-3126-4955-b733-91c4e0affc27" src="https://github.com/user-attachments/assets/4801e797-26c3-47a6-9d23-4ee7cebc7316" />
+### 3 pilas de 12v para alimentar el circuito
+<img width="230" height="340" alt="1acfec41-3126-4955-b733-91c4e0affc27" src="https://github.com/user-attachments/assets/4801e797-26c3-47a6-9d23-4ee7cebc7316" />
