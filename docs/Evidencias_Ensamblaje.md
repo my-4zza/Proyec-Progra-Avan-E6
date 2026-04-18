@@ -15,3 +15,7 @@
 # Porta pilas 
 ### 3 pilas de 12v para alimentar el circuito
 <img width="230" height="340" alt="1acfec41-3126-4955-b733-91c4e0affc27" src="https://github.com/user-attachments/assets/4801e797-26c3-47a6-9d23-4ee7cebc7316" />
+
+# Conexión de Regulador de voltaje 
+### En la mini protoboard están conectados el regulador junto a la tierra común del circuito y a la batería
+<img width="400" height="500" alt="f95dc139-af74-458f-bf78-7d8649fd5666" src="https://github.com/user-attachments/assets/e4248549-e3b8-44a0-a03a-bcaf9bf826f1" />
