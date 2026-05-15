@@ -26,40 +26,40 @@
 
 # Conexión de todos los elementos (Usando el Arduino UNO)
 ### En la imagen podemos apreciar la conexión de las baterias (12v) que permiten el control del carro junto a al Arduino UNO
-<img width="1200" height="1600" alt="Foto de arduino UNO" src="https://github.com/user-attachments/assets/7e508c50-31e5-4107-9260-0bc00699d4a8" />
+<img width="500" height="600" alt="Foto de arduino UNO" src="https://github.com/user-attachments/assets/7e508c50-31e5-4107-9260-0bc00699d4a8" />
 
 ### En la imagen se muestra la implementacion de un servo que servira para mover la direccion del sensor ultrasonico
-<img width="1200" height="1600" alt="union del servo" src="https://github.com/user-attachments/assets/caa5f81c-57d6-4a3d-8a07-6f37db04e1fc" />
+<img width="500" height="600" alt="union del servo" src="https://github.com/user-attachments/assets/caa5f81c-57d6-4a3d-8a07-6f37db04e1fc" />
 
 ### En la imagen se muestra la implementacion del sensor ultrasonico
-<img width="389" height="547" alt="Foto de union con el sensor ultrasonico" src="https://github.com/user-attachments/assets/85a6aabf-92fa-47bf-8b3a-f0c46f239e89" />
+<img width="500" height="600" alt="Foto de union con el sensor ultrasonico" src="https://github.com/user-attachments/assets/85a6aabf-92fa-47bf-8b3a-f0c46f239e89" />
 
 ### En la imagen se muestra el carro ya con el sensor y el servo ya unidas
-<img width="378" height="450" alt="Carro con sus complementos" src="https://github.com/user-attachments/assets/8c34f59f-f6eb-446e-9895-bbe4535fec5d" />
+<img width="500" height="600" alt="Carro con sus complementos" src="https://github.com/user-attachments/assets/8c34f59f-f6eb-446e-9895-bbe4535fec5d" />
 
 # Ensamblaje del brazo
 
 ### en la imagen se muestra el inicio del armado del brazo, ademas de el carro armado
-<img width="1200" height="1600" alt="Armado de garra" src="https://github.com/user-attachments/assets/f937ed78-46ab-42ac-a6cc-2e5803a9affb" />
+<img width="500" height="600" alt="Armado de garra" src="https://github.com/user-attachments/assets/f937ed78-46ab-42ac-a6cc-2e5803a9affb" />
 
 ### En la imagen se muestra el ensamblade de una parte del brazo
-<img width="1200" height="1600" alt="Pieza del brazo" src="https://github.com/user-attachments/assets/6294b3fb-53a4-4562-8356-79432e8e1085" />
+<img width="500" height="600" alt="Pieza del brazo" src="https://github.com/user-attachments/assets/6294b3fb-53a4-4562-8356-79432e8e1085" />
 
 ### En las imagen se muestra el avance del armado del brazo 
-<img width="1600" height="720" alt="Armado de brazo 1" src="https://github.com/user-attachments/assets/a63d27f5-2213-4e9f-bdfa-db125c78e3da" />
-<img width="1600" height="720" alt="Armado de brazo 2" src="https://github.com/user-attachments/assets/6b57567a-1b78-4b1a-99fa-604bdecb0819" />
-<img width="1600" height="720" alt="Armado de brazo 3" src="https://github.com/user-attachments/assets/e85d25b7-0244-4ac4-b82c-026357a53e62" />
+<img width="500" height="600" alt="Armado de brazo 1" src="https://github.com/user-attachments/assets/a63d27f5-2213-4e9f-bdfa-db125c78e3da" />
+<img width="500" height="600" alt="Armado de brazo 2" src="https://github.com/user-attachments/assets/6b57567a-1b78-4b1a-99fa-604bdecb0819" />
+<img width="500" height="600" alt="Armado de brazo 3" src="https://github.com/user-attachments/assets/e85d25b7-0244-4ac4-b82c-026357a53e62" />
 
 ### En la imagen se muestra el ensamblaje completa del brazo desde varias perspectivas
-<img width="1600" height="720" alt="Brazo completo 1" src="https://github.com/user-attachments/assets/ede17f8f-2e24-4dc1-8941-841600e1b21f" />
-<img width="1599" height="899" alt="Brazo completo 2" src="https://github.com/user-attachments/assets/46e3bd9a-d789-42ce-b657-b18a861ca4d4" />
-<img width="899" height="1599" alt="Brazo completo 3" src="https://github.com/user-attachments/assets/99bcea78-4265-46c7-9aae-47a5870691e5" />
+<img width="500" height="600" alt="Brazo completo 1" src="https://github.com/user-attachments/assets/ede17f8f-2e24-4dc1-8941-841600e1b21f" />
+<img width="500" height="600" alt="Brazo completo 2" src="https://github.com/user-attachments/assets/46e3bd9a-d789-42ce-b657-b18a861ca4d4" />
+<img width="500" height="600" alt="Brazo completo 3" src="https://github.com/user-attachments/assets/99bcea78-4265-46c7-9aae-47a5870691e5" />
 
 # Union del chasis del carro con el brazo
 
 ### En la imagen se muestra un avance de como quedaria el chasis del carro con el brazo 
-<img width="1600" height="1200" alt="Chasis con brazo" src="https://github.com/user-attachments/assets/99619fa3-833e-46bf-991e-92be84d8d0b0" />
-<img width="1200" height="1600" alt="Chasis con brazo 2" src="https://github.com/user-attachments/assets/b7ab4227-580e-4623-9df2-66b7291b4c3c" />
+<img width="500" height="600" alt="Chasis con brazo" src="https://github.com/user-attachments/assets/99619fa3-833e-46bf-991e-92be84d8d0b0" />
+<img width="500" height="600" alt="Chasis con brazo 2" src="https://github.com/user-attachments/assets/b7ab4227-580e-4623-9df2-66b7291b4c3c" />
 
 ### En la imagen se muestra el chasis y brazo mejor implementados, y sus conexiones hechas
-<img width="944" height="620" alt="Chasis con brazo y conexiones" src="https://github.com/user-attachments/assets/462735bb-5f00-480a-a0c6-a9a839c9227f" />
+<img width="500" height="600" alt="Chasis con brazo y conexiones" src="https://github.com/user-attachments/assets/462735bb-5f00-480a-a0c6-a9a839c9227f" />
