@@ -1,4 +1,4 @@
-# Módulo de Selección por Color a Carrito Seguidor de Línea
+# Carrito recolector de objetos
 
 Este documento contiene los créditos del equipo para la experiencia educativa de **Programación Avanzada**.
 
