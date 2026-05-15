@@ -30,3 +30,4 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `PROJECT.md` | v1.3 -> v1.4 | realizo recoleccion de datos poniendo en practica en fisico del corro simulado. | 17/04/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `README.md` | v1.0 -> v2.0 | Cambio total en la vision del proyecto por cuestiones conveniencia. | 15/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `AUTHORS.md` | v1.0 -> v1.1 | Actualización de nombre del proyecto | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
+| `Lista_de_Hardware.md` | v1.0 -> v2.0 | Cambio en la listas de componentes. | 15/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
