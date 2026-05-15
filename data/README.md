@@ -1,6 +1,6 @@
 # Carpeta de Datos y Registros (Data)
 
-Esta carpeta está destinada a almacenar datos de entrada grandes, registros de telemetría (logs) de los sensores y archivos pesados generados durante las pruebas del Carro Seguidor de Línea.
+Esta carpeta está destinada a almacenar datos de entrada grandes, registros de telemetría (logs) de los sensores y archivos pesados generados durante las pruebas del Carrito colector de objetos
 
 **Importante:**
 Para mantener el historial del repositorio ágil y evitar saturar el almacenamiento, **NO se deben subir archivos mayores a 50MB a esta carpeta**. 
