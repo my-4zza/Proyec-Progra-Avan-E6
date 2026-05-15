@@ -35,3 +35,4 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `docs/Evidencias_Ensamblaje` | v1.0 -> v2.0 | Se hizo una actualizacion de las evidencias de ensamblaje. | 15/05/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `Diagrama de conexiones carrito recolector.png` | v0.0 -> v1.0 | Se añadió el diagrama de conexiones del proyecto. | 15/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `Carro_seguidor.ino` | v1.0 | Primera versión del código del carrito | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
+| `Datos_Sensor_Ultrasónico.txt` | v1.0 | Muestra de datos de entrada del sensor HC-SR04 | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
