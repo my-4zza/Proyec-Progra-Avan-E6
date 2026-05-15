@@ -32,3 +32,4 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `AUTHORS.md` | v1.0 -> v1.1 | Actualización de nombre del proyecto | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `Lista_de_Hardware.md` | v1.0 -> v2.0 | Cambio en la listas de componentes. | 15/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `PROJECT.md` | v1.4 -> v2,0 | Se cambió a un nuevo enfoque del proyecto  | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
+| `docs/Evidencias_Ensamblaje` | v1.0 -> v2.0 | Se hizo una actualizacion de las evidencias de ensamblaje. | 15/05/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
