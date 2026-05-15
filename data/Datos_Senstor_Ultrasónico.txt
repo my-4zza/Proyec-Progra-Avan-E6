@@ -1,0 +1,12 @@
+
+Iniciando lectura de datos del sensor...
+Entrada cruda (cm): 150
+Entrada cruda (cm): 120
+Entrada cruda (cm): 85
+Entrada cruda (cm): 45
+Entrada cruda (cm): 25   
+Entrada cruda (cm): 18
+Entrada cruda (cm): 12
+Entrada cruda (cm): 9    
+Entrada cruda (cm): 9
+Entrada cruda (cm): 9
