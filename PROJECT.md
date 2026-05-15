@@ -1,76 +1,41 @@
-# Carro Seguidor de Línea con Detección de Colores
+# Carrito recolector de objetos
 
 # Objetivos
 **Objetivo General:**
-Diseñar y adaptar módulo de selección por color a un carrito seguidor de línea, implementando un FPGA, con lenguaje Python.
+Diseñar y coordinar los motores del carrito con el imán recolector y el sensor de proximidad para autonomía del carrito 
 
 **Objetivos Específicos:**
--	Diseñar la estructura del seguidor de línea para la capacidad de clasificar objetos por color
--	Programar el software para el seguimiento de líneas y clasificación de colores mediante un sensor
+-	Diseñar la estructura del carrito recolector y optimizar espacio dentro del chasis.
+-	Programar el software para la coordinación de las cuatro ruedas con el sensor que viene a ser el "ojo" del carrito
 -	Integrar el Software y hardware para controlar los moteres de carro 
--	Realizar pruebas del funcionamiento del carro, mediante pruebas de circuitos con líneas con obstáculos 
-
+-	Realizar pruebas del funcionamiento del carro, mediante pruebas de circuitos con obstáculos y callejones.
 
 ## Producto Mínimo Viable (MVP)
-Un carrito que avanza por una línea negra se detiene automáticamente cuando le pones una pieza enfrente, enciende el servo para separarla hacia la izquierda o la derecha (dependiendo de si es un color u otro), y manda un mensaje de texto por Bluetooth a la computadora.
+Un carrito autónomo que al toparse con un obstáculo manda una señal al sensor para que busque a la izquiera o derecha una alternativa de camino y si encuentra una ruta libre gira hacia esa dirección, si no encuentra camino libre se activa el brazo con el imán para quitar el obstáculo
 
 1. Navegación Básica (Hardware)
-- El robot sigue una pista sencilla (un óvalo o una línea recta con una curva ligera).
-- Movimiento a velocidad constante baja-media, un control básico (si sale por la derecha, girar a la izquierda) es suficiente.
-2. Clasificación Binaria (El corazón del FPGA)
--	El sensor de color (TCS3200) solo está calibrado para distinguir dos colores muy contrastantes (Rojo vs. Azul, o Blanco vs. Negro).
--	El servomotor SG90 solo tiene dos posiciones programadas (0 grados para un color, 180 grados para el otro).
-3. Software "Crudo" (Python)
--	El módulo Bluetooth envía caracteres simples (Ejemplo: R para Rojo, A para Azul).
--	El script de Python corriendo en tu Acer simplemente lee el puerto COM y lo imprime en la consola de comandos/terminal: "Pieza ROJA detectada. Total: 1".
-
+- El robot sigue una linea recta hasta toparse con el objetivo y analisa posibles rutas
+- Movimiento a velocidad constante baja-media
+2. Módulo de navegación
+-	El sensor ultrasónico solo está calibrado para distinguir objetos grandes o paradedes (Es posible una integración de un segundo sensor)
+-	Los servomotores SG90 se encargarán de mover la base de la garra y extenderla y retraerla, teniendo en cuenta que se pueden mover 180 grados.
+3. Software "Crudo" (C Arduino)
+-	El sensor ultrasónico manda señales a la arduino que indican las posibles salidas.
 
 ## Diagrama a Bloques del Hardware
-<pre>
-+-----------------------------------------------------------------------------------------+
-|                          Carro Seguidor de Línea con Detección de Colores                        |
-+-----------------------------------------------------------------------------------------+
 
-   [ BLOQUE DE ENTRADAS ]               [ BLOQUE DE PROCESAMIENTO ]            [ BLOQUE DE SALIDAS ]
-                                   
- +-----------------------+             +---------------------------+             +-----------------------+
- | Regleta IR (Línea)    |====(Bus)====> Módulo Seguidor de Línea  |====(PWM)====> Puente H (TB6612)     |
- +-----------------------+             |                           |             +-----------+-----------+
-                                       |                           |                         | (Potencia)
- +-----------------------+             |                           |             +-----------v-----------+
- | Sensor Color TCS3200  |---(Freq)--->| Analizador de Frecuencia  |             | 2x Motorreductores DC |
- +-----------------------+             | (Decodificador de Color)  |             +-----------------------+
-                                       |                           |
- +-----------------------+             | +-----------------------+ |             +-----------------------+
- | Sensor IR (FC-51)     |---(Pulso)-->| | Máquina de Estados    | |---(PWM)====>| Servomotor SG90       |
- | (Presencia de objeto) |             | | Central (FSM)         | |             | (Compuerta selectora) |
- +-----------------------+             | +-----------------------+ |             +-----------------------+
-                                       |                           |
-                                       |                           |             +-----------------------+
-                                       | Módulo UART (Serial Tx)   |---(Tx)----->| Módulo Bluetooth      |
-                                       +---------------------------+             | (HC-05)               |
-                                                  (FPGA)                         +-----------+-----------+
-                                                                                             |
-                                                                                       (Inalámbrico)
-                                                                                             |
-                                                                                 +-----------v-----------+
-                                                                                 | PC      |
-                                                                                 |-----------------------|
-                                                                                 | - Script de Python    |
-                                                                                 | - Terminal / Consola  |
-                                                                                 +-----------------------+
+<img width="785" height="564" alt="Diagrama_bloques_carrito" src="https://github.com/user-attachments/assets/e86c3280-cd0b-4955-81c5-d8231887d215" />
 
 Leyenda de conexiones:
 ---(Señal)--->  : Conexión digital simple (1 bit)
-===(Bus)=====>  : Conexión de múltiples bits (Bus de datos) o PWM
-</pre>
+===(PWM)=====>  : Conexión de múltiples bits (Bus de datos)
 
 | Categoría | Componente | Descripción |
 | :--- | :--- | :--- |
-| **Cerebro** | **Tarjeta FPGA** | Procesamiento lógico central y control de periféricos. |
-| **Control** | **Módulo Bluetooth HC-05** | Interfaz para control inalámbrico y recepción de comandos. |
-| **Interfaz** | **Level Shifter (3.3V a 5V)** | Conversor de nivel lógico para proteger los pines de la FPGA. |
-| **Estructura** | **Kit de chasis 2WD** | Base mecánica con dos ruedas de tracción y una rueda loca. |
+| **Cerebro** | **Tarjeta Arduino UNO** | Procesamiento lógico central y control de periféricos. |
+| **Visión** | **Sensor Ultrasónico** | Interfaz para control inalámbrico y recepción de comandos. |
+| **Brazo** | **Servomotor SG90** |Control de brazo mecánico y retirar objetos del camino |
+| **Estructura** | **Kit de chasis 2WD** | Base mecánica con cuatro ruedas de tracción |
 
 ---
 
@@ -80,24 +45,20 @@ Para garantizar la autonomía y estabilidad del robot, se utiliza una configurac
 
 * **Baterías:** 4x Li-Ion 18650 (Alta densidad energética).
 * **Soporte:** 1x Portapilas para celdas 18650.
-* **Regulación:** Módulo **Regulador MP1584** (Step-down para ajustar el voltaje de operación).
 
 ---
 
 ## Sensores Integrados
 
-El robot utiliza una suite de sensores para interactuar con su entorno de manera inteligente:
+El robot utiliza un único sensor para interactuar con su entorno de manera inteligente (Se planea integrar más sensores)
 
-1.  **Color (TCS3200):** Permite identificar superficies o marcas de colores específicos.
-2.  **Línea (Pololu QTR-8RC):** Arreglo de sensores infrarrojos para seguimiento preciso de rutas.
-3.  **Obstáculos (FC-51):** Sensor infrarrojo para detección de proximidad y prevención de colisiones.
+1.  **Sensor Ultrasónico(HC-SR04):** Permite identificar superficies a dos distancias variables y con ditinta acción
 
 ---
 
 ## Próximos Pasos
-- [ ] Implementar la máquina de estados en VHDL/Verilog.
-- [ ] Configurar los tiempos de muestreo del sensor QTR-8RC.
-- [ ] Establecer la comunicación UART con el módulo HC-05.
+- [ ] Mejorar el reconocimiento de objetivos con el sensor HC-SR04
+- [ ] Implementación de más sensores de identificación 
 
 
 ## Lista de componentes
@@ -105,23 +66,17 @@ El robot utiliza una suite de sensores para interactuar con su entorno de manera
 
 | Categoría | Material / Cantidad | Función | Precio |
 | :--- | :--- | :--- | :--- |
-| **Cerebro y comunicación** | Tarjeta FPGA | Matriz de puertas lógicas programables. | $650 |
-| | Módulo Bluetooth HC-05 | Para enviar el inventario en tiempo real a tu código en Python. | $148 |
-| | Módulo conversor de nivel lógico (Level Shifter) 3.3V a 5V | Este chip protege el FPGA si se usan sensores que manden señales de 5V. | $66 |
+| **Cerebro y comunicación** | Tarjeta Arduino UNO | placa electrónica basada en un microcontrolador | $400 |
 | **Sensores (Entradas)** | Sensor de color TCS3200 | Funciona para clasificación de colores. | $200 |
-| | Pololu QTR-8RC | Es el sensor que ayuda a hacer el seguidor de línea. | $80 |
-| | Sensor infrarrojo de obstáculos FC-51 | Para detectar si el cubo o pelota entra al mecanismo y el FPGA empiece a leer el color. | $140 |
+| | 1 Sensor Ultrasónico HC-SR04 | Visión del carrito para detectar objetivos | $60 |
 | **Actuadores (Salidas)** | Módulo Puente H TB6612FNG | Para funcionamiento del carrito. | $120 |
-| | 2 Motorreductores DC | Son para el funcionamiento de las llantas. | $170 |
-| | 2 Servomotores SG90 | Para el brazo recolector. | $100 |
+| | 3 Servomotores SG90 | Para el brazo recolector. | $150 |
 | **Chasis y mecánica** | Kit de chasis 2WD | Estructura o base del carro. | $175 |
 | | Materiales para el brazo recolector | Los materiales de los que haremos el brazo. | Aún pendiente |
 | **Energía (Alimentación)** | 4 Baterías Li-Ion 18650 | Para tener buena corriente. | $500 |
 | | 1 Portapilas para 18650 | Para poner las pilas ahí. | $100 |
-| | Regulador MP1584 | Para reducir el voltaje a 3.3 o 5v y no quemar algunos componentes. | $70 |
 | | Paquetes de jumpers | Para conexión. | $140 |
 
-## Roles
 
 ### Cronograma del Proyecto
 
