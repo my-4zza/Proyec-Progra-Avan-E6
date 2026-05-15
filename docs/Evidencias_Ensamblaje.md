@@ -51,9 +51,9 @@
 <img width="500" height="600" alt="Armado de brazo 3" src="https://github.com/user-attachments/assets/e85d25b7-0244-4ac4-b82c-026357a53e62" />
 
 ### En la imagen se muestra el ensamblaje completa del brazo desde varias perspectivas
-<img width="500" height="600" alt="Brazo completo 1" src="https://github.com/user-attachments/assets/ede17f8f-2e24-4dc1-8941-841600e1b21f" />
-<img width="500" height="600" alt="Brazo completo 2" src="https://github.com/user-attachments/assets/46e3bd9a-d789-42ce-b657-b18a861ca4d4" />
-<img width="500" height="600" alt="Brazo completo 3" src="https://github.com/user-attachments/assets/99bcea78-4265-46c7-9aae-47a5870691e5" />
+<img width="350" height="450" alt="Brazo completo 1" src="https://github.com/user-attachments/assets/ede17f8f-2e24-4dc1-8941-841600e1b21f" />
+<img width="350" height="450" alt="Brazo completo 2" src="https://github.com/user-attachments/assets/46e3bd9a-d789-42ce-b657-b18a861ca4d4" />
+<img width="350" height="4500" alt="Brazo completo 3" src="https://github.com/user-attachments/assets/99bcea78-4265-46c7-9aae-47a5870691e5" />
 
 # Union del chasis del carro con el brazo
 
