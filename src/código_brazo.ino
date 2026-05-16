@@ -1,64 +1,128 @@
-// Autor: Azael Pérez González
+// Autor: Alfredo Cid Garcia
 // Fecha: 15/05/2026
-// PRUEBA DE BRAZO No. 2
-
+// PRUEBA DE BRAZO No. 3
 #include <Servo.h>
 
-// Definición de los 3 servos en pines analógicos
+// Definición de los 4 Servos
 Servo servoBase;
-Servo servoHombro;
-Servo servoPinza;
+Servo servoHombro;  // Pin A1 (Lateral A)
+Servo servoAlcance; // Pin A2 (Lateral B)
+Servo servoGarra;   // Pin A3 (Punta)
 
-const int pinBase = A0;
-const int pinHombro = A1;
-const int pinPinza = A2;
+const int pBase=A0, pHombro=A1, pAlcance=A2, pGarra=A3;
+
+// Variables para rastrear posición actual (crucial para suavizado)
+int posHombroActual = 90;
+int posAlcanceActual = 90;
+
+// Constantes de seguridad de madera (Ajusta si zumban en los extremos)
+const int LIMITE_ALTO = 140; // No ir a 180 para no forzar madera
+const int LIMITE_BAJO = 40;  // No ir a 0
 
 void setup() {
-  // Inicializar comunicación para ver el estado en la PC
   Serial.begin(9600);
-  Serial.println("--- Inicio de prueba mecánica del brazo ---");
+  Serial.println("--- INICIANDO PROTOCOLO DE PRUEBA TOTAL MEARM ---");
 
-  // Asociar los servos a los pines analógicos
-  servoBase.attach(pinBase);
-  servoHombro.attach(pinHombro);
-  servoPinza.attach(pinPinza);
+  // Adjuntar servos
+  servoBase.attach(pBase);
+  servoHombro.attach(pHombro);
+  servoAlcance.attach(pAlcance);
+  servoGarra.attach(pGarra);
 
-  // Posición inicial de seguridad al arrancar
-  Serial.println("Posición de reposo inicial...");
-  servoBase.write(90);    // Centrado
-  servoHombro.write(150); // Retraído (arriba/atrás)
-  servoPinza.write(10);   // Pinza abierta
-  delay(2000);            // Espera de 2 segundos antes de empezar el bucle
+  // POSICIÓN DE REPOSO INICIAL (Segura, a media altura)
+  Serial.println("Estableciendo posición de reposo segura...");
+  servoBase.write(90);
+  servoGarra.write(90); // Garra semi-abierta
+  
+  // Movimiento directo en setup está bien porque los servos están quietos
+  servoHombro.write(90); 
+  servoAlcance.write(90); 
+  delay(3000); // 3 segundos para prepararte
 }
 
 void loop() {
-  Serial.println("1. Desplegando brazo hacia el frente...");
-  servoPinza.write(10);   // Asegura pinza abierta
-  servoBase.write(90);    // Asegura base al frente
-  delay(500);
-  servoHombro.write(50);  // Baja el hombro para alcanzar el suelo
-  delay(1500);            // Tiempo para que el motor termine el movimiento
+  Serial.println("=== NUEVO CICLO DE DEMOSTRACIÓN ===");
 
-  Serial.println("2. Cerrando pinza (Sujetando objeto)...");
-  // NOTA: Si notas que el motor vibra mucho al cerrar, baja este número (ej. a 120)
-  servoPinza.write(140);  
+  // --- PRUEBA 1: EJE BASE (Rotación) ---
+  Serial.println("1. Probando Base: Girando a la derecha...");
+  servoBase.write(40); delay(1500);
+  Serial.println("... Girando a la izquierda...");
+  servoBase.write(140); delay(1500);
+  Serial.println("... Regresando al centro.");
+  servoBase.write(90); delay(1000);
+
+  // --- PRUEBA 2: GARRA (Punta) ---
+  Serial.println("2. Probando Garra: Abriendo por completo...");
+  servoGarra.write(10); delay(1000);
+  Serial.println("... Cerrando por completo (Precaución con la madera)...");
+  // Si zumba al cerrar, sube este 170 a 160 o 150
+  servoGarra.write(170); delay(1000); 
+  Serial.println("... Posición neutra.");
+  servoGarra.write(90); delay(1000);
+
+  // --- PRUEBA 3: EJE ALCANCE (Lateral B - A2) - Coordinado con Hombro fijo ---
+  Serial.println("3. Probando Alcance: Estirando hacia adelante LENTAMENTE...");
+  // moverLaterales(HombroDestino, AlcanceDestino, velocidadMs)
+  // Dejamos hombro fijo en 90 y estiramos Alcance
+  moverLaterales(90, 130, 25); 
+  delay(1500);
+  Serial.println("... Contrayendo hacia atrás LENTAMENTE...");
+  moverLaterales(90, 50, 25); 
+  delay(1500);
+  // Regresar a reposo
+  moverLaterales(90, 90, 20);
   delay(1000);
 
-  Serial.println("3. Replicando brazo (Levantando carga)...");
-  servoHombro.write(140); // Sube el hombro con fuerza
+  // --- PRUEBA 4: EJE HOMBRO (Lateral A - A1) - Coordinado con Alcance fijo ---
+  Serial.println("4. Probando Hombro: Bajando toda la estructura LENTAMENTE...");
+  // Fijamos Alcance en 90 y bajamos Hombro
+  // Precaución aquí de no golpear la mesa (visto en video)
+  moverLaterales(60, 90, 30); 
   delay(1500);
-
-  Serial.println("4. Girando la base hacia el contenedor...");
-  servoBase.write(170);   // Gira casi por completo a un lado
+  Serial.println("... Levantando toda la estructura LENTAMENTE...");
+  moverLaterales(120, 90, 30); 
   delay(1500);
-
-  Serial.println("5. Soltando objeto...");
-  servoPinza.write(10);   // Abre la pinza para dejar caer el objeto
+  // Regresar a reposo
+  moverLaterales(90, 90, 20);
   delay(1000);
 
-  Serial.println("6. Regresando a posición de reposo...");
-  servoHombro.write(150); // Asegura hombro arriba
-  delay(500);
-  servoBase.write(90);    // Regresa la base al centro
-  delay(2000);            // Pausa de 2 segundos antes de la siguiente simulación
+  // --- PRUEBA 5: MOVIMIENTO COMBINADO (Pick & Place simulado) ---
+  Serial.println("5. Simulando recolección coordinada suave...");
+  moverLaterales(110, 110, 25); // Posición alta y adelante
+  delay(1000);
+  moverLaterales(70, 70, 25);   // Bajamos y recogemos (como agarrando algo del suelo)
+  delay(1000);
+  moverLaterales(90, 90, 20);   // Regresar a reposo central
+
+  Serial.println("=== FIN DEL CICLO. Esperando 5 segundos ===");
+  delay(5000);
+}
+
+// --- FUNCIÓN MAESTRA DE MOVIMIENTO SUAVE Y COORDINADO (Laterales) ---
+// hombroDestino: Ángulo final del Servo Hombro (A1)
+// alcanceDestino: Ángulo final del Servo Alcance (A2)
+// velocidad: Ms de pausa entre grados (más alto = más lento)
+void moverLaterales(int hombroDestino, int alcanceDestino, int velocidad) {
+  
+  // Asegurar límites de seguridad para no romper madera
+  hombroDestino = constrain(hombroDestino, LIMITE_BAJO, LIMITE_ALTO);
+  alcanceDestino = constrain(alcanceDestino, LIMITE_BAJO, LIMITE_ALTO);
+
+  // Mientras alguno de los dos servos no esté en su destino
+  while (posHombroActual != hombroDestino || posAlcanceActual != alcanceDestino) {
+    
+    // Ajuste paso a paso del Hombro
+    if (posHombroActual < hombroDestino) posHombroActual++;
+    else if (posHombroActual > hombroDestino) posHombroActual--;
+    
+    // Ajuste paso a paso del Alcance (simultáneamente)
+    if (posAlcanceActual < alcanceDestino) posAlcanceActual++;
+    else if (posAlcanceActual > alcanceDestino) posAlcanceActual--;
+    
+    // Aplicar el movimiento simultáneo a los servos laterales
+    servoHombro.write(posHombroActual);
+    servoAlcance.write(posAlcanceActual);
+    
+    delay(velocidad); // Retardo para suavidad mecánica
+  }
 }
