@@ -63,3 +63,9 @@
 
 ### En la imagen se muestra el chasis y brazo mejor implementados, y sus conexiones hechas
 <img width="500" height="600" alt="Chasis con brazo y conexiones" src="https://github.com/user-attachments/assets/462735bb-5f00-480a-a0c6-a9a839c9227f" />
+
+## Avances del armado
+
+### En el siguiente link se muestran los avances hechos hasta el momento
+
+https://drive.google.com/drive/folders/1OujwxJhWj53Z4z1XMeig9Y1i139Go-MI?usp=sharing
