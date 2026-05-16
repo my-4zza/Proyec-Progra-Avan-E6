@@ -50,7 +50,7 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `carro_recolector.ino` | v1.0 | Integra el brazo con el sensor ultrasónico para que el carro se detenga y ejecute la recolección automáticamente al detectar un objeto a menos de 8 cm. | 15/05/2026 | Pérez González Azael (`my-4zza`) |
 | `carro_recolector.ino` | v1.1 | Rutina secuencial de 6 pasos diseñada exclusivamente para calibrar la mecánica del brazo y monitorear cada movimiento a través del puerto serial. | 15/05/2026 | Pérez González Azael (`my-4zza`) |
 | `carro_recolector.ino` | v1.2 | Control de movimiento suave para brazo robótico de 3 DOF (servos) | 15/05/2026 | Alfredo Cid Garcia (`Alfredxs19`) |
-| `carro_recolector.ino` | v1.2 | Test integral MeArm 4 DOF con movimiento suave síncrono y límites de seguridad contra estrés mecánico. | 15/05/2026 | Alfredo Cid Garcia (`Alfredxs19`) |
+| `carro_recolector.ino` | v1.3 | Test integral MeArm 4 DOF con movimiento suave síncrono y límites de seguridad contra estrés mecánico. | 15/05/2026 | Alfredo Cid Garcia (`Alfredxs19`) |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
