@@ -43,3 +43,5 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `README.md` | v2.0 -> v2.1 | Se hizo una pequeña actualizacion en el readme.md. | 15/05/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `docs/Evidencias_Ensamblaje` | v2.0 -> v2.1 | Se hizo una pequeña actualizacion de las evidencias de ensamblaje. | 15/05/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `Datos_ultrasonico.csv` | v1.0 | Datos expulsados de la consola referentes al sensor HC-SR04 | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
+| `test/input_01.txt` | v1.0 | se añadio el primer set de datos de prueba del sensor. | 15/05/2026 | Cid García Alfredo (`Alfredxs19`) |
+| `test/output_01.txt` | v1.0 | documento para definir las respuestas esperadas para el caso de prueba 01. | 15/05/2026 | Cid García Alfredo (`Alfredxs19`) |
