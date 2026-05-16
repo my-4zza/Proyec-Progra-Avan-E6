@@ -45,3 +45,11 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `Datos_ultrasonico.csv` | v1.0 | Datos expulsados de la consola referentes al sensor HC-SR04 | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `test/input_01.txt` | v1.0 | se añadio el primer set de datos de prueba del sensor. | 15/05/2026 | Cid García Alfredo (`Alfredxs19`) |
 | `test/output_01.txt` | v1.0 | documento para definir las respuestas esperadas para el caso de prueba 01. | 15/05/2026 | Cid García Alfredo (`Alfredxs19`) |
+| `input_large.txt` | v1.0 | Archivo masivo con datos simulados del sensor, diseñado para medir la velocidad y el rendimiento del código bajo estrés (benchmarking) | 15/05/2026 | Pérez González Azael (`my-4zza`) |
+| `run_tests.sh` | v1.0 | Script que automatiza la validación: inyecta datos al código, compara si la respuesta fue correcta y genera un reporte final de éxito o fallo. | 15/05/2026 | Pérez González Azael (`my-4zza`) |
+| `carro_recolector.ino` | v1.0 | Integra el brazo con el sensor ultrasónico para que el carro se detenga y ejecute la recolección automáticamente al detectar un objeto a menos de 8 cm. | 15/05/2026 | Pérez González Azael (`my-4zza`) |
+| `carro_recolector.ino` | v1.1 | Rutina secuencial de 6 pasos diseñada exclusivamente para calibrar la mecánica del brazo y monitorear cada movimiento a través del puerto serial. | 15/05/2026 | Pérez González Azael (`my-4zza`) |
+| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
