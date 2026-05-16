@@ -40,3 +40,5 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `instrucciones_montaje.md` | v1.0 | Link de instrucciones del brazo | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `build_and_upload.sh` | v1.0.0 | Se añadio el archivo build_and_upload.sh dentro de la carpeta scripts. | 15/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `setup_env.sh` | v1.0.0 | Se añadio el archivo setup_env.sh dentro de la carpeta scripts. | 15/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
+| `README.md` | v2.0 -> v2.1 | Se hizo una pequeña actualizacion en el readme.md. | 15/05/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
+| `docs/Evidencias_Ensamblaje` | v2.0 -> v2.1 | Se hizo una pequeña actualizacion de las evidencias de ensamblaje. | 15/05/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
