@@ -37,3 +37,4 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `Carro_seguidor.ino` | v1.0 | Primera versión del código del carrito | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `Datos_Sensor_Ultrasónico.txt` | v1.0 | Muestra de datos de entrada del sensor HC-SR04 | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `carro_seguidor.ino` | v1.0.0 -> v1.1.0 | Integracion de sensor ultrasonico asi coomo servomotor para carro recolector. | 15/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
+| `instrucciones_montaje.md` | v1.0 | Link de instrucciones del brazo | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
