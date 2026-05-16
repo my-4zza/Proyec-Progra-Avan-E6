@@ -3,6 +3,10 @@
 Este repositorio comprende todas las actividades que se llevarán a cabo para el proyecto del carrito recolector de objetos para la experiencia educativa Programación Avanzada.
 ## Avance del 70%
 
+### En el siguiente link se muestran los avances hechos hasta el momento
+
+https://drive.google.com/drive/folders/1OujwxJhWj53Z4z1XMeig9Y1i139Go-MI?usp=sharing
+
 ## Descripción General
 Este proyecto consiste en un carrito recolector de objetos autónomo. Mientras el robot avanza por su trayectoria y evita obstaculos, utiliza un sensor para identificar objetos frente a el  y con la ayuda de un brazo con un electroiman y garra (intercambiable) recogera objetos metalicos que puedan estorbar en el camino teniendo estas dos alternativas de recoleccion. 
 
