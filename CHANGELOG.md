@@ -42,3 +42,4 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `setup_env.sh` | v1.0.0 | Se añadio el archivo setup_env.sh dentro de la carpeta scripts. | 15/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `README.md` | v2.0 -> v2.1 | Se hizo una pequeña actualizacion en el readme.md. | 15/05/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `docs/Evidencias_Ensamblaje` | v2.0 -> v2.1 | Se hizo una pequeña actualizacion de las evidencias de ensamblaje. | 15/05/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
+| `Datos_ultrasonico.csv` | v1.0 | Datos expulsados de la consola referentes al sensor HC-SR04 | 15/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
