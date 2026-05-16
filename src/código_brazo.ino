@@ -1,6 +1,8 @@
 // Autor: Alfredo Cid Garcia
 // Fecha: 15/05/2026
-// PRUEBA DE BRAZO No. 3
+// PRUEBA DE BRAZO No. 4
+#include <Servo.h>
+
 #include <Servo.h>
 
 // Definición de los 4 Servos
