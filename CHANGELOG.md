@@ -52,6 +52,6 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `carro_recolector.ino` | v1.2 | Control de movimiento suave para brazo robótico de 3 DOF (servos) | 15/05/2026 | Alfredo Cid Garcia (`Alfredxs19`) |
 | `carro_recolector.ino` | v1.3 | Test integral MeArm 4 DOF con movimiento suave síncrono y límites de seguridad contra estrés mecánico. | 15/05/2026 | Alfredo Cid Garcia (`Alfredxs19`) |
 | `README.md` | v2.2 | Se adjunto el link de pruebas y se organizó la presentación. | 15/05/2'26 | Pérez González Azael (`my-4zza`) |
-| `src` | v1.1 -> v1.2 | Actualización del diagrama de flujo con la lógica de detección de colores. | 15/03/2026 | Hernández García Juan Carlos (`jhernandezgarcia887-del`) |
+| `carro_recolector.ino` | v1.1 -> v1.2 | Actualización del diagrama de flujo con la lógica de detección de colores. | 15/03/2026 | Hernández García Juan Carlos (`jhernandezgarcia887-del`) |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
