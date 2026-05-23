@@ -1,3 +1,7 @@
+//Modificador: Alegría Ponce Jose Santiago
+//Fecha: 23/mayo/2026
+//Descripción: Integración de electroiman en la punta del brazo
+
 #include <Servo.h>
 
 // --- Pines Motores (Tracción) ---
@@ -10,7 +14,7 @@ const int echoPin = 11;
 const int pinServoUltra = 3; 
 Servo servoUltra;
 
-// --- Pines Brazo Robótico ---
+// --- Pines Brazo Robótico (MeArm) ---
 const int pinBase = A0;
 const int pinHombro = A1;
 const int pinAlcance = A2;
@@ -18,10 +22,15 @@ Servo servoBase;
 Servo servoHombro;
 Servo servoAlcance;
 
+// --- Pin Electroimán ---
+const int pinIman = 13;
+
 // --- Variables Globales ---
-int velTraccion = 180;       // Velocidad de los motores amarillos
-int posHombroActual = 90;    // Rastreador para suavizado del hombro
-int posAlcanceActual = 90;   // Rastreador para suavizado del alcance
+int velTraccion = 180;       
+
+// Posición de transporte con la máxima altura y repliegue para liberar el sensor
+int posHombroActual = 140;   // Hombro al máximo arriba (guardia alta)
+int posAlcanceActual = 50;    // Alcance completamente retraído hacia atrás
 
 void setup() {
   Serial.begin(9600);
@@ -34,20 +43,23 @@ void setup() {
   pinMode(trigPin, OUTPUT); 
   pinMode(echoPin, INPUT);
   
+  // Configuración Electroimán
+  pinMode(pinIman, OUTPUT);
+  digitalWrite(pinIman, LOW); 
+  
   // Inicializar Servos
   servoUltra.attach(pinServoUltra);
   servoBase.attach(pinBase);
   servoHombro.attach(pinHombro);
   servoAlcance.attach(pinAlcance);
 
-  // Posiciones Seguras de Arranque
-  servoUltra.write(90); // Mirar al frente
-  servoBase.write(90);  // Brazo centrado
+  // El brazo arranca plegado arriba para no obstruir la primera lectura
+  servoUltra.write(90); 
+  servoBase.write(90);  
   servoHombro.write(posHombroActual);
   servoAlcance.write(posAlcanceActual);
   
-  Serial.println("SISTEMA INICIADO: Calibrando...");
-  delay(3000); // Dar tiempo para colocar el coche en el piso
+  delay(3000); 
 }
 
 void loop() {
@@ -56,15 +68,13 @@ void loop() {
   // --- CASO 1: OBJETO MUY CERCA (RECOLECCIÓN) ---
   if (distancia > 0 && distancia <= 10) {
     frenar();
-    Serial.println("OBJETO DETECTADO: Iniciando Recolección...");
-    delay(1000); // Esperar a que pase la inercia y se estabilice la corriente
+    delay(1000); 
     rutinaRecoger();
   } 
   // --- CASO 2: OBSTÁCULO (EVASIÓN) ---
   else if (distancia > 10 && distancia <= 25) {
     frenar();
-    Serial.println("Obstáculo. Buscando ruta...");
-    delay(400); // Pausa eléctrica antes de mover el servo del sensor
+    delay(400); 
     
     int distDer = mirarDerecha();
     int distIzq = mirarIzquierda();
@@ -74,7 +84,7 @@ void loop() {
     } else {
       girarIzquierda();
     }
-    delay(500); // Tiempo que duran girando las llantas
+    delay(500); 
     frenar();
     delay(200);
   } 
@@ -83,32 +93,43 @@ void loop() {
     avanzar();
   }
   
-  delay(50); // Pequeña pausa para estabilidad del procesador
+  delay(50); 
 }
 
 // ==========================================
-//        FUNCIONES DEL BRAZO ROBÓTICO
+//        FUNCIONES DEL BRAZO Y MAGNETISMO
 // ==========================================
 
 void rutinaRecoger() {
-  // 1. Bajar el brazo para "barrer" o empujar el objeto
-  // Ajusta estos valores (ej. 60 y 130) según la calibración física de tu ensamble
+  // 1. Bajar el brazo desde las alturas hacia el objeto
   moverLaterales(60, 130, 25); 
   delay(800);
   
-  // 2. Levantar la carga 
-  moverLaterales(130, 60, 25); 
+  // 2. ACTIVAR ELECTROIMÁN (Atrapar objeto)
+  digitalWrite(pinIman, HIGH);
+  delay(500); 
+  
+  // 3. Levantar la carga a una posición alta intermedia para el viaje
+  moverLaterales(120, 70, 25); 
   delay(800);
   
-  // 3. Girar la base simulando dejar el objeto a un lado
+  // 4. Girar la base a un lado para descargar (150 grados)
   servoBase.write(150); 
   delay(1200);
   
-  // 4. Regresar el brazo a su posición compacta de transporte
-  moverLaterales(90, 90, 20); 
-  delay(500);
+  // 5. DESACTIVAR ELECTROIMÁN (Soltar objeto en contenedor lateral)
+  digitalWrite(pinIman, LOW);
+  delay(500); 
+  
+  // 6. REPLIEGUE CRÍTICO: Antes de volver al centro, encogemos el brazo al Máximo Alto posible
+  // Esto asegura que el imán suba por completo mientras sigue apuntando a un lado
+  moverLaterales(140, 50, 20); 
+  delay(600);
+  
+  // 7. REGRESO SEGURO: Con el brazo ya empotrado arriba, la base vuelve al frente (90 grados)
+  // El electroimán pasa por encima del cono del ultrasónico sin estorbarle
   servoBase.write(90); 
-  delay(1000); // Listo para volver a avanzar
+  delay(1000); // El carro ahora tiene el frente 100% despejado para avanzar
 }
 
 void moverLaterales(int hDest, int aDest, int velocidad) {
