@@ -53,5 +53,5 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `carro_recolector.ino` | v1.3 | Test integral MeArm 4 DOF con movimiento suave síncrono y límites de seguridad contra estrés mecánico. | 15/05/2026 | Alfredo Cid Garcia (`Alfredxs19`) |
 | `README.md` | v2.2 | Se adjunto el link de pruebas y se organizó la presentación. | 15/05/2'26 | Pérez González Azael (`my-4zza`) |
 | `carro_recolector.ino` | v1.1 -> v1.2 | implementacion de todos los sensores. | 15/03/2026 | Hernández García Juan Carlos (`jhernandezgarcia887-del`) |
-| :--- | :--- | :--- | :--- | :--- |
+| `electroiman.ino` | v1.0.0 | Se añadio el archivo electroiman.ino dentro de la carpeta src. | 23/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | :--- | :--- | :--- | :--- | :--- |
