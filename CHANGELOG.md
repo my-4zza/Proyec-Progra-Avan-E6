@@ -58,4 +58,5 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `presentation, consent.txt` | v1.0.0 | Se creo la carpeta presentation y el consent.txt para los permisos correspondientes. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `guion_antonio.md` | v1.0.0 | Creacion del apartado.md para los guiones de equipo. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `credits.md` | v1.0.0 | Creacion del credits.md para los perrmisos y consentimientos del equipo. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
+| `transcript.txt` | v1.0.0 | Creacion del transcript.txt para el video del equipo. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | :--- | :--- | :--- | :--- | :--- |
