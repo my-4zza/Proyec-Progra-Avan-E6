@@ -56,6 +56,6 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `electroiman.ino` | v1.0.0 | Se añadio el archivo electroiman.ino dentro de la carpeta src. | 23/05/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `carro_recolectorV1.5.ino` | v1.4 -> v1.5 | Nueva función de electroimán para toma de objetos  | 23/05/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `presentation, consent.txt` | v1.0.0 | Se creo la carpeta presentation y el consent.txt para los permisos correspondientes. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
-| `guion_antonio.md` | v1.0.0 | Creacion del apartado.md para los guiones de quipo. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
-| `credits.md` | v1.0.0 | Creacion del credits.md para los perrmisos y consentimientos del quipo. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
+| `guion_antonio.md` | v1.0.0 | Creacion del apartado.md para los guiones de equipo. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
+| `credits.md` | v1.0.0 | Creacion del credits.md para los perrmisos y consentimientos del equipo. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | :--- | :--- | :--- | :--- | :--- |
