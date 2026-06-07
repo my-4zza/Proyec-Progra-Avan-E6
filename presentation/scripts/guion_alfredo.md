@@ -22,3 +22,4 @@
 > "Con estos nuevos motores, el ensamble funcionó perfecto. El imán demostró tener la fuerza para sujetar la pieza incluso soportando la fuerza centrífuga al girar el chasis. 
 >
 > Como conclusión: me llevo la lección de que calcular bien el torque desde la etapa de diseño es vital para elegir los actuadores correctos y no quemar los componentes."
+
