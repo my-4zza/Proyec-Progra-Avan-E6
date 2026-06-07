@@ -66,4 +66,5 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `consent.txt` | v1.0.0 | Se añadió el consentimiento personal. | 07/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `consent.txt` | v1.0.1 | Se añadió el consentimiento personal. | 07/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `consent.txt` | v1.0.2 | Se añadió el consentimiento personal. | 07/06/2026 |  Alfredo Cid Garcia (`Alfredxs19`)|
+| `consent.txt` | v1.0.3 | Añadí mi consentimiento al uso de contenido de video | 07/06/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | :--- | :--- | :--- | :--- | :--- |
