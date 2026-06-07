@@ -69,4 +69,12 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `consent.txt` | v1.0.3 | Añadí mi consentimiento al uso de contenido de video | 07/06/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `Lista_de_Hardware.md` | v2.0.0 -> v2.0.1 | Actualización y cambios en la listas de componentes. | 07/06/2026 |  Alfredo Cid Garcia (`Alfredxs19`) |
 | `docs/Diagrama de conexion 2.0` | v2.0 | Diagrama de conexion del carrito | 07/06/2026 |  Alfredo Cid Garcia (`Alfredxs19`) |
+| `guion_azael.md` | v1.0.0 | Se añadió el guion correspondiente a mi trabajo. | 07/06/2026 | Pérez González Azael (`my-4zza`) |
+| `docs/Diagrama de conexion 3.0` | v3.0.0 | Se actualizaron las conexiones más recientes. | 07/06/2026 | Pérez González Azael (`my-4zza`) |
+| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
