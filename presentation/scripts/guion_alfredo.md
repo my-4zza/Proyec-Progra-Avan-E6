@@ -1,4 +1,4 @@
-# 🎤 Guion de Presentación - Módulo de Recolección
+# Guion de Presentación - Módulo de Recolección
 
 **Expositor:** Alfredo Cid  
 **Rol en el proyecto:** Actualización de hardware y uso del módulo electroimán.  
