@@ -1,3 +1,4 @@
+
 # Guion de Presentación - Antonio Portilla
 **Rol en el proyecto:** Arquitectura de Hardware y Gestión de Potencia
 
