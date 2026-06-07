@@ -2,6 +2,7 @@
 # Guion de Presentación - Antonio Portilla
 **Rol en el proyecto:** Arquitectura de Hardware y Gestión de Potencia
 
+
 ## 1. Introducción y Rol
 Hola, mi nombre es Antonio Portilla y en este proyecto me encargué del diseño y la arquitectura de hardware del carrito recolector. Mi objetivo principal fue garantizar que el cerebro del robot, el puente H de tracción y los motores del brazo mecánico tuvieran un suministro de energía estable y seguro sin interferir entre sí.
 
