@@ -1,9 +1,8 @@
 # Proyec-Progra-Avan-E6: Carrito recolector de objetivos
 
 Este repositorio comprende todas las actividades que se llevarán a cabo para el proyecto del carrito recolector de objetos para la experiencia educativa Programación Avanzada.
-## Avance del 70%
 
-### En el siguiente link se muestran los avances y resultados hasta el momento
+## En el siguiente link se muestran los avances y resultados realizados
 ### Avances:
 [Avances](https://uvmx-my.sharepoint.com/:f:/g/personal/zs24013146_estudiantes_uv_mx/IgDzvoVnMy4NRpvYgp8nVLekASA-eiMD-VeWL5L-A01x4uM?e=aMcDHj)
 ### Resultados:
@@ -16,9 +15,9 @@ Este proyecto consiste en un carrito recolector de objetos autónomo. Mientras e
     (Nota: Estas instrucciones se irán actualizando conforme avancemos en las etapas del semestre)
 1. Revisa la lista de componentes en la carpeta `hardware/` para ensamblar el chasis, los sensores y la electrónica.
 2. Consulta los esquemas de conexión en `docs/`.
-3. Carga el código principal ubicado en la carpeta `src/` a tu microcontrolador usando el IDE correspondiente.
+3. Carga el código principal ubicado en la carpeta `src/carro_recolectorV1.5.ino` a tu microcontrolador usando el IDE correspondiente.
 
-## [15-05-2026] - Ensamblaje, pruebas y conexiones
+## [04-06-2026] - Ensamblaje, pruebas y conexiones
 
 ### Agregado y Configurado
 
@@ -26,15 +25,16 @@ Este proyecto consiste en un carrito recolector de objetos autónomo. Mientras e
   * Los pares de motores izquierdo y derecho se conectaron a las borneras de salida correspondientes del puente H L298N (OUT1/OUT2 y OUT3/OUT4 respectivamente).
 
 * **Sistema de Alimentación y Nodo Central (Fuerza Bruta):** * Se estableció el puente H L298N como el nodo principal de distribución de corriente.
-  * El voltaje positivo directo del banco de baterías (11.4V - 10.5V nominal) se enrutó a la entrada de `12V` del L298N.
+  * El voltaje positivo directo del banco de baterías (11.4V - 10.5V nominal) se en rutó a la entrada de `12V` del L298N y se agrega el uso de otro banco de pilas(7.4V - 8V).
   * Se unificó el bus negativo de las baterías en la terminal `GND` del L298N, estableciendo la tierra común para todo el vehículo.
 
 * **Etapa de alimetacion de la lógica (Protección del Cerebro):** * Mediante el puerto vin de nuestro arduino alimentamos nuestro microcontrolador y evitara perdida de potencia, mientras que el modulo 129N mediante su bornera de +5V alimenta la parte logica, sensores y servomotores.
+  * se ocupan 4 reguladores 7805 para distribuir la energia a los servomotores, jumto a un disipador de calor, para evitar la sobrecarga de cada 7805
   * **Asignación:** Pines asignados a `IN1` e `IN2` para el control de sentido del par motor izquierdo; `IN3` e `IN4` para el par motor derecho.
 
-## [15-05-2026] - Mejoras Futuras y Cambios Necesarios
-
-* **Evaluacion y analisis de funcionalidad de electroiman:** * Tendremos en cuenta la utilizacion ya sea de la garra para la recoleccion o el electroiman, son dos opciones que tenemos para nuestro brazo recolector y estamos en proceso de evaluar caul será más conveniente. 
+* **Etapa de de brazo (movimiento mecanico):** * Mediante el archivo en `docs/Instrucciones_montaje.md` se hace el armado del brazo junto a los servomotores, siguiendo el orden descrito en el manual del brazo.
+  * Se hace la integracion del electroiman, en el lugar donde iria la garra, debido a falta de fuerza de la garra al momento de cargar objetos.
+  *  **Asignación** Pines asignados al electroiman ----- para la activacion y desactivación del mismo junto al funcionamiento al del brazo.
 
 ## Estructura del Repositorio
 
@@ -54,10 +54,11 @@ Este proyecto consiste en un carrito recolector de objetos autónomo. Mientras e
 * **`tests/`** — Casos de prueba: pequeños verificables, escalados y script `run_tests.sh`.
 * **`hardware/`** — Detalles físicos: Lista de materiales (BOM) y esquemáticos electrónicos.
 * **`scripts/`** — Utilidades de automatización:
-    * `bench_python.sh` / `bench_c.sh`: Automatización de pruebas de rendimiento.
-    * `setup_env.sh`: Preparación del entorno y dependencias.
-    * `deploy.sh`: Instrucciones para flashear el hardware.
+    * `bench_python.sh` / `bench_c.sh` — Automatización de pruebas de rendimiento.
+    * `setup_env.sh` — Preparación del entorno y dependencias.
+    * `deploy.sh` — Instrucciones para flashear el hardware.
 * **`data/`** — Datos de entrada grandes y registros de telemetría (gestionado con Git LFS).
+* **`presentation/`** — Presentacion e integrantes
 
 ## Enlaces Rápidos a Entregables
 * Detalles técnicos, Objetivos y Cronograma (PROJECT.md)](./PROJECT.md)
