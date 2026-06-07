@@ -6,9 +6,9 @@ Materia: Programación Avanzada
 Proyecto: Carrito recolector de objetivos
 Equipo: Equipo 6
 
-Por medio del presente documento, los integrantes abajo firmantes declaramos tener pleno conocimiento de los requisitos de la entrega final correspondientes a la Etapa 3 del proyecto. 
+Por medio del presente documento, los integrantes abajo firmantes declaramos tener pleno conocimiento de los requisitos de la entrega final correspondientes a la Etapa 4 (Etapa Final) del proyecto. 
 
-Otorgamos nuestro consentimiento explícito y voluntario para que nuestra imagen, voz y participación grabadas en formato de video  sean incluidas en el archivo final_video.mp4 y publicadas en este repositorio de GitHub como evidencia del trabajo individual y colaborativo desarrollado durante el periodo escolar.
+Otorgamos nuestro consentimiento explícito y voluntario para que nuestra imagen, voz y participación grabadas en formato de video sean incluidas en el archivo final_video.mp4 y publicadas en este repositorio de GitHub como evidencia del trabajo individual y colaborativo desarrollado durante el periodo escolar.
 
 Integrantes que otorgan su consentimiento:
 
@@ -16,6 +16,7 @@ Integrantes que otorgan su consentimiento:
 2. Jimmy Loucioss Alarcón Galván
 3. Alfredo Cid Garcia
 4. José Santiago Alegría Ponce
+5. Azael Pérez González
 
 Fecha de registro: 7 de junio de 2026
 Xalapa, Veracruz, México.
