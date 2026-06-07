@@ -3,9 +3,9 @@
 **Duración estimada:** 2 a 3 minutos
 
 ## 1. Introducción y Rol
-Hola soy José Santiago y estuve a cargo del 'cerebro' espacial del robot: la lógica de navegación autónoma mediante el sensor ultrasónico HC-SR04.
+Hola soy José Santiago y estuve a cargo de la lógica de navegación de los sensores del carrito: la lógica de navegación autónoma mediante el sensor ultrasónico HC-SR04.
 
-## 2. Desarrollo (Código)
+## 2. Desarrollo 
 En la pantalla pueden ver la función `leerDistancia()`. En lugar de hacer que el sensor hiciera un barrido tipo radar
 constante, lo cual generaba lecturas erráticas por la vibración del chasis, decidimos mantenerlo fijo mirando al frente y dividir la
 toma de decisiones en dos zonas de alerta mediante condicionales.
