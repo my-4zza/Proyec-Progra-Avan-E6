@@ -64,4 +64,5 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `guion_Alfredo.md` | v1.0 | Creación de carpeta y subida de guión en el video (Es posible que el guión adjuntado reciba cambios)  | 7/06/2026 | Alfredo Cid Garcia (`Alfredxs19`) |
 | `guion_jimmy.md` | v1.0 | Creación del archivo del guión para el video. | 07/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `consent.txt` | v1.0.0 | Se añadió el consentimiento personal. | 07/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
+| `consent.txt` | v1.0.1 | Se añadió el consentimiento personal. | 07/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | :--- | :--- | :--- | :--- | :--- |
