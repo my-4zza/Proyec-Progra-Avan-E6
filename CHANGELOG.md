@@ -60,4 +60,5 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `credits.md` | v1.0.0 | Creacion del credits.md para los perrmisos y consentimientos del equipo. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `transcript.txt` | v1.0.0 | Creacion del transcript.txt para el video del equipo. | 05/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `guion_antonio.md` | v1.1.0 | Se añadió el guion correspondiente a mi trabajo. | 07/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
+| `guion_santiago.md` | v1.0 | Cración de carpeta y subida de guión en el video (Es posible que el guión adjuntado reciba cambios)  | 7/06/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | :--- | :--- | :--- | :--- | :--- |
