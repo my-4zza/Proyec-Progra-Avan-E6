@@ -34,7 +34,12 @@ Este proyecto consiste en un carrito recolector de objetos autónomo. Mientras e
 
 * **Etapa de de brazo (movimiento mecanico):** * Mediante el archivo en `docs/Instrucciones_montaje.md` se hace el armado del brazo junto a los servomotores, siguiendo el orden descrito en el manual del brazo.
   * Se hace la integracion del electroiman, en el lugar donde iria la garra, debido a falta de fuerza de la garra al momento de cargar objetos.
-  *  **Asignación** Pines asignados al electroiman ----- para la activacion y desactivación del mismo junto al funcionamiento al del brazo.
+  *  **Asignación** Pin asignado al electroiman D13 para la activacion y desactivación del mismo junto al funcionamiento al del brazo.
+    
+## Integracion de los sistemas. 
+En la integracion de los sistemas es mucho mas efectivo en cuanto ala recoleccion, gracias ala ayuda del eletroimán y las ordenes de activacion para un funcionamiento optimo. 
+Creando una buena armonizacion entre los sistemas de control y de potencia, cuiadando en no hacer malas conexiones para evitar algun cortocircuito o quemaduras para los componenetes fisicos. 
+
 
 ## Estructura del Repositorio
 
