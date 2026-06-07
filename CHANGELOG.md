@@ -72,6 +72,7 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `guion_azael.md` | v1.0.0 | Se añadió el guion correspondiente a mi trabajo. | 07/06/2026 | Pérez González Azael (`my-4zza`) |
 | `docs/Diagrama de conexion 3.0` | v3.0.0 | Se actualizaron las conexiones más recientes. | 07/06/2026 | Pérez González Azael (`my-4zza`) |
 | `README.md` | v2.3 | Se actualizo el readme.md con los cambios ya realizados hasta la fecha | 07/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
+| `README.md` | v2.4 | Se actualizo el readme.md con los cambios ya realizados hasta la fecha| 07/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
