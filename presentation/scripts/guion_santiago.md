@@ -2,7 +2,6 @@
 **Rol:** Lógica de Navegación y Sensores
 **Duración estimada:** 2 a 3 minutos
 
-
 ## 1. Introducción y Rol
 Hola soy José Santiago y estuve a cargo de la lógica de navegación de los sensores del carrito: la lógica de navegación autónoma mediante el sensor ultrasónico HC-SR04.
 
