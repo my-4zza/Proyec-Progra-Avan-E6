@@ -2,8 +2,8 @@
 
 Este proyecto utiliza una arquitectura de control basada en IDE Arduino para controlar un chasis móvil de 4 ruedas. A continuación, se detalla la función de cada elemento físico del sistema:
 
-Versión 2.0.0
-Fecha: 15/05/2026
+Versión 2.0.1
+Fecha: 07/06/2026
 
 * **Arduino uno:** Es el "cerebro" del carrito. Se encarga de ejecutar la lógica de control, procesar las lecturas del sensor ultrasonico a si como mover el brazo y generar las señales de control (como PWM y dirección) necesarias para mover los motores a través del módulo L298N.
 
