@@ -76,7 +76,7 @@ El robot utiliza un único sensor para interactuar con su entorno de manera inte
 | | 3 Servomotores SG90 | Para el brazo recolector. | $150 |
 | | Electroimán Open Smart 5v 10n 1kg | Para levantar objetos. | 179$ |
 | **Chasis y mecánica** | Kit de chasis 2WD | Estructura o base del carro. | $175 |
-| | Materiales para el brazo recolector | Los materiales de los que haremos el brazo. | Aún pendiente |
+| | Materiales para el brazo recolector | Los materiales de los que haremos el brazo. | 250$ |
 | **Energía (Alimentación)** | 4 Baterías Li-Ion 18650 | Para tener buena corriente. | $500 |
 | | 1 Portapilas para 18650 | Para poner las pilas ahí. | $100 |
 | |transistor lm7805 | Regulador de voltaje. | 20$ |
