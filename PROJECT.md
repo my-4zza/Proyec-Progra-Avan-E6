@@ -26,6 +26,10 @@ Un carrito autónomo que al toparse con un obstáculo manda una señal al sensor
 
 <img width="785" height="564" alt="Diagrama_bloques_carrito" src="https://github.com/user-attachments/assets/e86c3280-cd0b-4955-81c5-d8231887d215" />
 
+## Diagrama de bloques concluido en fecha final de entrega
+<img width="785" height="564" alt="image" src="https://github.com/user-attachments/assets/6ce4c6f3-0549-408d-b059-9976279654a3" />
+
+
 Leyenda de conexiones:
 ---(Señal)--->  : Conexión digital simple (1 bit)
 ===(PWM)=====>  : Conexión de múltiples bits (Bus de datos)
@@ -54,11 +58,10 @@ El robot utiliza un único sensor para interactuar con su entorno de manera inte
 
 1.  **Sensor Ultrasónico(HC-SR04):** Permite identificar superficies a dos distancias variables y con ditinta acción
 
----
 
-## Próximos Pasos
-- [ ] Mejorar el reconocimiento de objetivos con el sensor HC-SR04
-- [ ] Implementación de más sensores de identificación 
+## Actuadores Integrados
+1.Electroimán Open Smart 5v 10n 1kg
+---
 
 
 ## Lista de componentes
@@ -71,10 +74,12 @@ El robot utiliza un único sensor para interactuar con su entorno de manera inte
 | | 1 Sensor Ultrasónico HC-SR04 | Visión del carrito para detectar objetivos | $60 |
 | **Actuadores (Salidas)** | Módulo Puente H TB6612FNG | Para funcionamiento del carrito. | $120 |
 | | 3 Servomotores SG90 | Para el brazo recolector. | $150 |
+| | Electroimán Open Smart 5v 10n 1kg | Para levantar objetos. | 179$ |
 | **Chasis y mecánica** | Kit de chasis 2WD | Estructura o base del carro. | $175 |
 | | Materiales para el brazo recolector | Los materiales de los que haremos el brazo. | Aún pendiente |
 | **Energía (Alimentación)** | 4 Baterías Li-Ion 18650 | Para tener buena corriente. | $500 |
 | | 1 Portapilas para 18650 | Para poner las pilas ahí. | $100 |
+| |transistor lm7805 | Regulador de voltaje. | 20$ |
 | | Paquetes de jumpers | Para conexión. | $140 |
 
 
