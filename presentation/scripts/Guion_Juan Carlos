@@ -1,1 +1,18 @@
+# Guion de Presentación - Juan Carlos Hernández García
+**Rol en el proyecto:** Control de Tracción y Puente H
+**Duración estimada:** 3 a 4 minutos
 
+## 1. Introducción y Rol
+"Hola, mi nombre es Juan Carlos y me encargué del sistema de tracción y desplazamiento del vehículo, controlando los motores de corriente continua a través del driver L298N."
+
+## 2. Desarrollo (Código y Hardware)
+"En pantalla se muestran las funciones de movimiento como `avanzar()` y `girarDerecha()`. El control lo realizamos mediante modulación por ancho de pulsos (PWM) desde el Arduino hacia los pines ENA y ENB del puente H, permitiéndonos controlar la velocidad exacta de las llantas de forma independiente para lograr giros sobre su propio eje."
+
+## 3. Resultados de Pruebas
+"Inicialmente, el carrito se movía demasiado rápido. El peso de la batería y la estructura de madera generaba una inercia que hacía que el vehículo se tambaleara, provocando que el sensor ultrasónico diera lecturas falsas apuntando al suelo."
+
+## 4. Dificultades y Soluciones
+"El reto fue encontrar el equilibrio entre la fuerza para mover el chasis y la estabilidad para los sensores. La solución fue ajustar la variable global de tracción a un valor PWM de 110. Con esto sacrificamos velocidad, pero ganamos un movimiento similar al de un tanque: lento, continuo y extremadamente estable."
+
+## 5. Lección Aprendida y Recomendación
+"La principal lección es que en robótica autónoma, más velocidad no es mejor. La recomendación es calibrar siempre la velocidad de tracción al ritmo de procesamiento de sus sensores para que al cerebro le dé tiempo de reaccionar."
