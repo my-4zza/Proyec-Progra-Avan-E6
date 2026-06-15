@@ -86,7 +86,7 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `transcript.txt` | v1.3.0 | Adicion de el transcript del miembro Juan Calros. | 14/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `transcript.txt` | v1.4.0 | Adicion de el transcript del miembro Alfredo. | 14/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `transcript.txt` | v1.5.0 | Adicion de el transcript del miembro Jimmy. | 14/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
-| :--- | :--- | :--- | :--- | :--- |
+| `README.md` | v2.6 -> v2.7 | Se adjunta un enlace que contiene el video del proyecto final. | 15/06/2026 | Pérez González Azael (`my-4zza`) |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
