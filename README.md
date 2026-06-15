@@ -1,5 +1,5 @@
-Darle Clik a la siguiente imagen para ser enviado a la carpeta de drive del video
-[![Demostración del carrito recolector de objetos](presentation/video-carrito.png)](https://drive.google.com/drive/folders/1kI8LGIYh37pM9ImtZcdKFInXa3onWUDl?usp=sharing)
+Darle Clik a la siguiente imagen para ser enviado a la carpeta drive del video:
+[![Demostración del carrito recolector de objetos](presentation/miniatura.png)](https://drive.google.com/drive/folders/1kI8LGIYh37pM9ImtZcdKFInXa3onWUDl?usp=sharing)
 # Proyec-Progra-Avan-E6: Carrito recolector de objetivos
 
 Este repositorio comprende todas las actividades que se llevarán a cabo para el proyecto del carrito recolector de objetos para la experiencia educativa Programación Avanzada.
