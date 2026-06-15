@@ -76,6 +76,8 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `PROJECT.md` | v1.5 | Actualización de diagramas y precios finlaes | 07/06/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `presentation/credits.md` | v1.0.0 -> v2.0.0 | Creación del archivo credits.md con metadatos del video final | 13/06/2026 | Pérez González Azael (`my-4zza`) |
 | `miniatura.png` | v1.0 | Se añadió la imagen para la miniatura del video del equipo.| 14/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
+| `video-carrito.png` | v1.0 | Se añadió la imagen para el readme que redirige hacia el link del video.| 14/06/2026 | Alfredo Cid Garcia (`Alfredxs19`) |
+| `README.md` | v2.4 -> v2.5 | Actualizacioón de readme se agrego el link del drive que dirige al video. | 14/06/2026 |  Alfredo Cid Garcia (`Alfredxs19`) |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
