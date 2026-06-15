@@ -58,3 +58,41 @@ Y bueno como las lecciones aprendidas en todo lo que hicimos en nuestro proyecto
 
 00:03:18 Orador 1
 Como aprendizaje o recomendación sería que hay que aislar bien las partes de control con las partes de potencia para evitar así algún problema o accidente.
+
+00:03:30 Orador 2 - Azael Pérez González
+Hola, mi nombre es Azael Pérez González y mi rol en este proyecto fue el diseño mecánico y la cinemática de las articulaciones del carrito.
+
+00:03:37 Orador 2
+Mi objetivo fue crear una estructura de madera estable que pudiera soportar los movimientos bruscos sin perder el centro de gravedad.
+
+00:03:44 Orador 2
+dicho brazo robótico utilizamos un enfoque de potencia dividida, en la pantalla podemos observar la base y el hombro, anclamos el servomotor MG995 directamente al hombro, porque es la articulación que exige mayor torque para levantar todo el ensamble.
+
+00:04:02 Orador 2
+Para el alcance y el giro de la base implementamos motores Mod 110 que nos brindan la precisión necesaria para la recolección.
+
+00:04:09 Orador 2
+En
+
+00:04:10 Orador 2
+Durante las pruebas de movimiento notamos que si el brazo quedaba extendido, bloqueaba el campo de visión del sensor ultrasónico frontal, lo que presentaba dificultades.
+
+00:04:19 Orador 2
+El mayor reto fue la colisión física de la madera y la obstrucción del radar.
+
+00:04:23 Orador 2
+Lo resolvimos programando un modo más lento, más ajustado en cuanto a la velocidad.
+
+00:04:30 Orador 2
+Los límites de los servos se ajustaron a ángulos extremos pero seguros.
+
+00:04:34 Orador 2
+hombro a 160 grados y el alcance a 40 grados, esto repliega el brazo por completo hacia arriba y hacia atrás, dejando el horizonte 100% libre para la navegación del carrito.
+
+00:04:47 Orador 2
+La lección más grande que aprendimos en esto es que el diseño de las piezas físicas debe ir de la mano con el código, una recomendación para futuros proyectos es siempre verificar la fricción de las uniones mecánicas, ya
+
+00:04:59 Orador 2
+ya que apretar demasiado un tornillo puede disparar el consumo de corriente y quemar un motor, que fue también uno de los problemas que se tuvieron durante el proyecto.
+
+
