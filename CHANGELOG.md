@@ -82,7 +82,7 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `final_video.srt` | v1.0 | Se creo el archivo base para la colocacion de los subtitulos del video.| 14/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `Timestamps.md` | v1.0 | Adición de marcas de tiempo del video y creación de carpeta | 14/06/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `transcript.txt` | v1.1.0 | Adicion de el transcript del miembro Antonio. | 14/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
-| :--- | :--- | :--- | :--- | :--- |
+| `transcript.txt` | v1.2.0 | Adicion de el transcript del miembro Azael. | 14/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
