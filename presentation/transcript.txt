@@ -1,1 +1,60 @@
 Transcripcion del equipo.
+
+00:00:01 Orador 1 - Antonio de Jesus Portilla Duran
+Que tal muy buenas, bueno les vamos a explicar sobre nuestro proyecto en este caso el coche recolector de objetos elaborado por el equipo 6.
+
+00:00:13 Orador 1
+Para comenzar mi nombre es Antonio de Jesús Portilla y bueno en este proyecto me encargue del diseño y la arquitectura del hardware del coche recolector y bueno el objetivo principal fue garantizar que el cerebro del robot, del puente H,
+
+00:00:29 Orador 1
+la tracción de los motores, así como los motores de brazo mecánico tuvieran un buen suministro de energía tanto estable y que no interfirieran entre ellos.
+
+00:00:41 Orador 1
+Para nuestra parte de hardware y conexiones en nuestro desarrollo, sabemos que alimentar el sistema con una sola pila, por ejemplo ocupamos baterías de 11 voltios, vimos que alimentar todo, tanto motores como sistemas
+
+00:00:57 Orador 1
+podía causar muchas bajas en cuestión de alimentación, más que nada por el L298N y pues en general los motores de tracción.
+
+00:01:07 Orador 1
+Y bueno por otro lado para proteger el Arduino y más que nada alimentar los servos del brazo, implementé lo que es un sistema de regulación utilizando los integrados LM7805, esto pues nos garantizó un voltaje limpio de 5 voltios,
+
+00:01:27 Orador 1
+para la lógica y el control fino de las articulaciones.
+
+00:01:31 Orador 1
+Y bien, en nuestra parte de resultados y pruebas, al poner la electrónica a prueba en la pista, la saturación de voltajes funcionó.
+
+00:01:40 Orador 1
+El Arduino nunca sufrió reinicios por caídas de tensión en cuanto el coche iniciaba, y bueno el módulo Electroman recibía las señales para atrapar los objetos sin generar algunas interferencias.
+
+00:01:27 Orador 1
+para la lógica y el control fino de las articulaciones.
+00:01:31 Orador 1
+Y bien, en nuestra parte de resultados y pruebas, al poner la electrónica a prueba en la pista, la saturación de voltajes funcionó.
+
+00:01:40 Orador 1
+El Arduino nunca sufrió reinicios por caídas de tensión en cuanto el coche iniciaba, y bueno el módulo Electroman recibía las señales para atrapar los objetos sin generar algunas interferencias.
+
+00:02:00 Orador 1
+Y bien en la parte de dificultades y soluciones lo que tuvimos fue el reto más técnico que tuvimos, fue que nos enfrentamos a lo que es a la calibración del brazo robótico y pues al intentar mover el hombro o el alcance al mismo tiempo vimos que existían picos de intensidad.
+
+00:02:21 Orador 1
+los cuales atoraba el LM7805 y entraba en protección térmica.
+
+00:02:28 Orador 1
+Entonces esto apagaba el sistema o dejaba de funcionar.
+
+00:02:33 Orador 1
+Entonces lo que hicimos fue resolver tanto de manera hardware como software, así ajustando lo que es la mecánica para evitar las fricciones.
+
+00:02:44 Orador 1
+Aplicamos una modificación de código, aislando de movimientos para que el brazo primero se estirara y
+
+00:02:51 Orador 1
+luego bajara y finalmente recogiera antes de subir, eso dividió el consumo de amperaje a la mitad.
+
+00:03:00 Orador 1
+Y bueno como las lecciones aprendidas en todo lo que hicimos en nuestro proyecto, fue principalmente que a pesar de que tengas un buen código, si el hardware no aguanta, obviamente se va a ahogar y pues principalmente ya no va a funcionar, o puede que tenga algunos problemas.
+
+00:03:18 Orador 1
+Como aprendizaje o recomendación sería que hay que aislar bien las partes de control con las partes de potencia para evitar así algún problema o accidente.
