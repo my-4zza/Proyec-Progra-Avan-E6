@@ -90,7 +90,7 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `README.md` | v2.7 -> v2.8 | Se corrigió la visibilidad del video, ya que no se mostraba la carátula. | 15/06/2026 | Pérez González Azael (`my-4zza`) |
 | `README.md` | v2.8 -> v2.9 | Se corrigió el error final de visibilidad de la carátula del video en GitHub. | 15/06/2026 | Pérez González Azael (`my-4zza`) |
 | `README.md` | v2.9 -> v3.0 | Se actualizaron contenidos con información reciente y se corrigieron enlaces a directorios. | 15/06/2026 | Pérez González Azael (`my-4zza`)
-| :--- | :--- | :--- | :--- | :--- |
+| `CONTRIBUTING.md` | v1.0 -> v2.0 | Se actualizó la forma y lineamientos en la que se trabajó el proyecto. | 15/06/2026 | Pérez González Azael (`my-4zza`) |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
