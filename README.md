@@ -1,6 +1,13 @@
-# Proyec-Progra-Avan-E6: Carrito recolector de objetivos
+# Proyec-Progra-Avan-E6: Carrito recolector de objetos
 
 Este repositorio comprende todas las actividades que se llevarán a cabo para el proyecto del carrito recolector de objetos para la experiencia educativa Programación Avanzada.
+
+## Características Principales
+* **Tracción Diferencial:** Movimiento controlado mediante puente H L298N y PWM para giros estables sobre su propio eje.
+* **Navegación Autónoma:** Detección de obstáculos y evasión de paredes mediante sensor ultrasónico HC-SR04 con algoritmos de filtrado de ruido.
+* **Brazo Robótico Articulado:** Cinemática de 3 grados de libertad (DOF) controlada por servomotores de alto torque.
+* **Recolección Magnética:** Módulo electroimán integrado con diodo de protección para manipulación segura de objetos metálicos.
+* **Potencia Aislada:** Banco de baterías dedicado para tracción y reguladores LM7805 en paralelo para la lógica y servomotores, previniendo caídas de tensión.
 
 # Evidencia en Video | Etapa 4 (Final)
 Se adjunta un video demostrando el proceso, conexiones y funcionamiento del proyecto final (dar click a la imagen): 
