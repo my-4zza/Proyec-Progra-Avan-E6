@@ -2,7 +2,7 @@
 
 PUERTO="/dev/ttyACM0"
 PLACA="arduino:avr:uno"
-CARPETA_SKETCH="../src/Explorador_MeArm" 
+CARPETA_SKETCH="../src/carro_recolectorV1.5.ino"
 
 echo "--- Iniciando Compilación ---"
 arduino-cli compile --fqbn $PLACA $CARPETA_SKETCH
