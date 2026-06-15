@@ -95,4 +95,32 @@ La lección más grande que aprendimos en esto es que el diseño de las piezas f
 00:04:59 Orador 2
 ya que apretar demasiado un tornillo puede disparar el consumo de corriente y quemar un motor, que fue también uno de los problemas que se tuvieron durante el proyecto.
 
+00:05:08 Orador 3 - Juan Carlos Hernandez Garcia
+Es Juan Carlos y me encargue del sistema de tracción y desplazamiento del vehículo, controlando los motores de corriente continua a través del driver L298N.
 
+00:05:24 Orador 3
+Principalmente en el desarrollo es el código y el hardware,
+
+00:05:28 Orador 3
+En pantalla se muestran algunas funciones del movimiento como avanzar y girar derecha, girar derecha principalmente.
+
+00:05:37 Orador 3
+El control se realiza mediante módulos como el ancho de los pulsos PWM desde el Arduino hacia los pines N/A y ENB del puente H, permitiéndose controlar la velocidad exactamente en la pantalla de forma independiente al hogar
+
+00:05:57 Orador 3
+tirar sobre su propio eje.
+
+00:06:00 Orador 3
+Resultado de las pruebas: estos fueron los resultados, inicialmente el carrito se movía demasiado rápido, el peso de la batería y la estructura de madera generaba una inercia que había que el vehículo tambalear principalmente provocando que el sensor ultrasónico diera lecturas falsas apuntando al suelo.
+
+00:06:22 Orador 3
+Dificultades y soluciones: el
+
+00:06:25 Orador 3
+El reto fue encontrar el equilibrio contra la fuerza para moverse el chasis y la estabilidad para los sensores.
+
+00:06:32 Orador 3
+La solución fue ajustar la variable global de la tracción a un valor PWM de 110 con esto sacrificamos velocidad, pero ganamos un movimiento similar al de un tanque lento, continuo y extremadamente estable.
+
+00:06:55 Orador 3
+Principalmente esto nos dejó la lección aprendida y recomendación, la principal lección es que en robótica autónoma más velocidad no es mejor, la recomendación es calibrar siempre la velocidad de tracción al ritmo de procesamiento de sus sensores para que el cerebro le de tiempo de reaccionar y eso es todo.
