@@ -81,7 +81,7 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `README.md` | v2.5 -> v2.6 | Actualizacioón de readme se agrego el link del drive que dirige al video y se modifico la imagen de la portada. | 14/06/2026 |  Alfredo Cid Garcia (`Alfredxs19`) |
 | `final_video.srt` | v1.0 | Se creo el archivo base para la colocacion de los subtitulos del video.| 14/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | `Timestamps.md` | v1.0 | Adición de marcas de tiempo del video y creación de carpeta | 14/06/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
-| :--- | :--- | :--- | :--- | :--- |
+| `transcript.txt` | v1.1.0 | Adicion de el transcript del miembro Antonio. | 14/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
