@@ -3,8 +3,9 @@
 
 Este repositorio comprende todas las actividades que se llevarán a cabo para el proyecto del carrito recolector de objetos para la experiencia educativa Programación Avanzada.
 
-Darle Clik a la siguiente imagen para ser enviado a la carpeta drive del video:
-[![Demostración del carrito recolector de objetos](presentation/miniatura.png)](https://drive.google.com/drive/folders/1kI8LGIYh37pM9ImtZcdKFInXa3onWUDl?usp=sharing)
+# Evidencia en Video | Etapa 4 (Final)
+Se adjunta un video demostrando el proceso, conexiones y funcionamiento del proyecto:
+[![](https://markdown-videos.deta.dev/youtube/rHxLL-gxWDA)](https://youtu.be/rHxLL-gxWDA)
 
 ## En el siguiente link se muestran los avances y resultados realizados
 ### Avances:
