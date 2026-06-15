@@ -1,10 +1,9 @@
-
 # Proyec-Progra-Avan-E6: Carrito recolector de objetivos
 
 Este repositorio comprende todas las actividades que se llevarán a cabo para el proyecto del carrito recolector de objetos para la experiencia educativa Programación Avanzada.
 
 # Evidencia en Video | Etapa 4 (Final)
-Se adjunta un video demostrando el proceso, conexiones y funcionamiento del proyecto:
+Se adjunta un video demostrando el proceso, conexiones y funcionamiento del proyecto final (dar click a la imagen): 
 <div align="center">
 
 [![Proyecto Carrito Recolector de Objetos](https://img.youtube.com/vi/rHxLL-gxWDA/0.jpg)](https://www.youtube.com/watch?v=rHxLL-gxWDA)
@@ -13,9 +12,9 @@ Se adjunta un video demostrando el proceso, conexiones y funcionamiento del proy
 
 ## En el siguiente link se muestran los avances y resultados realizados
 ### Avances:
-[Avances](https://uvmx-my.sharepoint.com/:f:/g/personal/zs24013146_estudiantes_uv_mx/IgDzvoVnMy4NRpvYgp8nVLekASA-eiMD-VeWL5L-A01x4uM?e=aMcDHj)
+[AVANCES ETAPA 3](https://uvmx-my.sharepoint.com/:f:/g/personal/zs24013146_estudiantes_uv_mx/IgDzvoVnMy4NRpvYgp8nVLekASA-eiMD-VeWL5L-A01x4uM?e=aMcDHj)
 ### Resultados:
-[Resultados](https://drive.google.com/drive/folders/1OujwxJhWj53Z4z1XMeig9Y1i139Go-MI?usp=sharing)
+[RESULTADOS ETAPA 3](https://drive.google.com/drive/folders/1OujwxJhWj53Z4z1XMeig9Y1i139Go-MI?usp=sharing)
 
 ## Descripción General
 Este proyecto consiste en un carrito recolector de objetos autónomo. Mientras el robot avanza por su trayectoria y evita obstaculos, utiliza un sensor para identificar objetos frente a el  y con la ayuda de un brazo con un electroiman y garra (intercambiable) recogera objetos metalicos que puedan estorbar en el camino teniendo estas dos alternativas de recoleccion. 
@@ -49,6 +48,11 @@ Este proyecto consiste en un carrito recolector de objetos autónomo. Mientras e
 En la integracion de los sistemas es mucho mas efectivo en cuanto ala recoleccion, gracias ala ayuda del eletroimán y las ordenes de activacion para un funcionamiento optimo. 
 Creando una buena armonizacion entre los sistemas de control y de potencia, cuiadando en no hacer malas conexiones para evitar algun cortocircuito o quemaduras para los componenetes fisicos. 
 
+## [15-06-2026] - Presentación, Documentación Final y Actualizaciones de Hardware
+
+* **Actualización de Actuadores:** Durante las pruebas físicas finales, se detectó que el brazo extendido exigía un torque que colapsaba la energía de la placa. Por ello, se retiraron los servomotores originales y se cambiaron por servos grandes de alto torque. Este cambio aportó la robustez mecánica para levantar la carga sin generar picos mortales de consumo eléctrico.
+* **Producción Audiovisual:** Se integró la evidencia final del proyecto en formato de video, incluyendo subtítulos para mayor accesibilidad. 
+* **Aprobación del Equipo:** Todos los integrantes del equipo firmaron y otorgaron su consentimiento explícito y voluntario para que su imagen, voz y participación sean incluidas y publicadas en el repositorio.
 
 ## Estructura del Repositorio
 
@@ -75,6 +79,8 @@ Creando una buena armonizacion entre los sistemas de control y de potencia, cuia
 * **`presentation/`** — Presentacion e integrantes
 
 ## Enlaces Rápidos a Entregables
-* Detalles técnicos, Objetivos y Cronograma (PROJECT.md)](./PROJECT.md)
-* Equipo de Trabajo (AUTHORS.md)](./AUTHORS.md)
-* Historial de Versiones y Etapas (CHANGELOG.md)](./CHANGELOG.md)
+* [Detalles técnicos, Objetivos y Cronograma (PROJECT.md)](./PROJECT.md)
+* [Equipo de Trabajo (AUTHORS.md)](./AUTHORS.md)
+* [Historial de Versiones y Etapas (CHANGELOG.md)](./CHANGELOG.md)
+* [Créditos y Metadatos del Video Final (credits.md)](./presentation/credits.md)
+* [Marcas de Tiempo del Video (Timestamps.md)](./presentation/Timestamps.md)
