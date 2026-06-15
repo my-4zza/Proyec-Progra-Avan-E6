@@ -79,6 +79,7 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `video-carrito.png` | v1.0 | Se añadió la imagen para el readme que redirige hacia el link del video.| 14/06/2026 | Alfredo Cid Garcia (`Alfredxs19`) |
 | `README.md` | v2.4 -> v2.5 | Actualizacioón de readme se agrego el link del drive que dirige al video. | 14/06/2026 |  Alfredo Cid Garcia (`Alfredxs19`) |
 | `README.md` | v2.5 -> v2.6 | Actualizacioón de readme se agrego el link del drive que dirige al video y se modifico la imagen de la portada. | 14/06/2026 |  Alfredo Cid Garcia (`Alfredxs19`) |
+| `final_video.srt` | v1.0 | Se creo el archivo base para la colocacion de los subtitulos del video.| 14/06/2026 | Portilla Durán Antonio de Jesús (`Antonioportillaxd`) |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
 | :--- | :--- | :--- | :--- | :--- |
