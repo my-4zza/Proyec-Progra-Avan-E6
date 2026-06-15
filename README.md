@@ -5,7 +5,7 @@ Este repositorio comprende todas las actividades que se llevarán a cabo para el
 
 # Evidencia en Video | Etapa 4 (Final)
 Se adjunta un video demostrando el proceso, conexiones y funcionamiento del proyecto:
-[![](https://markdown-videos.deta.dev/youtube/rHxLL-gxWDA)](https://youtu.be/rHxLL-gxWDA)
+[![](https://markdown-videos.deta.dev/youtube/rHxLL-gxWDA)](https://youtu.be/rHxLL-gxWDA?si=TGAuHaduWIiXIafk)
 
 ## En el siguiente link se muestran los avances y resultados realizados
 ### Avances:
