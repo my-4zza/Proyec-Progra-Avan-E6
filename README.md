@@ -5,7 +5,11 @@ Este repositorio comprende todas las actividades que se llevarán a cabo para el
 
 # Evidencia en Video | Etapa 4 (Final)
 Se adjunta un video demostrando el proceso, conexiones y funcionamiento del proyecto:
-[![](https://markdown-videos.deta.dev/youtube/rHxLL-gxWDA)](https://youtu.be/rHxLL-gxWDA?si=TGAuHaduWIiXIafk)
+<div align="center">
+
+[![Proyecto Carrito Recolector de Objetos](https://img.youtube.com/vi/rHxLL-gxWDA/0.jpg)](https://www.youtube.com/watch?v=rHxLL-gxWDA)
+
+</div>
 
 ## En el siguiente link se muestran los avances y resultados realizados
 ### Avances:
