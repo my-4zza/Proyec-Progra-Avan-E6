@@ -184,3 +184,33 @@ Con estos nuevos motores el ensamble funciona perfecto, el imán demostró tener
 
 00:10:36 --> 00:10:47 Orador 5
 Y como conclusión, pues la decisión es que calcular bien el torque desde la etapa de diseño espiritual, para que los actuadores funcionen correctamente y no lleguemos a quemar los componentes.
+
+0:10:48 --> 00:10:54 Orador 6 - Jimmy Loucioss Alarcón Galván
+Hola, mi nombre es Jimmy y mi error fue la integración final de todas las fases anteriores y la resolución de fallas en las pruebas hechas.
+
+00:10:55 --> 00:10:59 Orador 6
+Una vez que tuvimos todos los sistemas listos, mi trabajo fue ensamblar a las partes y hacer pruebas.
+
+00:11:00 --> 00:11:06 Orador 6
+Como pueden ver en la pantalla, realizamos pruebas de cada sistema creando códigos que solo movían un componente a la vez para detectar fallas de hardware.
+
+00:11:07 --> 00:11:19 Orador 6
+Así mismo logramos integrar el movimiento con el puente H, el sensor ultrasónico, el movimiento del brazo y el electroimán en un solo código, de manera continua que permitirá el carrito operar de manera 100% autónoma y estable.
+
+00:11:20 --> 00:11:24 Orador 6
+Y en la etapa final nos enfrentamos a un fallo crítico de funcionamiento,
+
+00:11:25 --> 00:11:47 Orador 6
+El motor de la base no respondía a las instrucciones del arduino, a pesar de que la batería entregaba 7.4 volts y aislando el código descubrimos que el problema era físico, ejecutamos un salto de pines de emergencia resignando el control del servo y del pin analógico A2 al A3 en el código base, lo cual devolvió la vida al ensamblaje inmediatamente.
+
+00:11:48 --> 00:11:51 Orador 6
+Y la mayor lección aprendida es el valor del diagnóstico modular
+
+00:11:52 --> 00:11:56 Orador 6
+Mi documentación para la instrumentación electrónica es si el sistema falla, divide y vencerás.
+
+00:11:57 --> 00:11:59 Orador 6
+Nunca asumas que todo el código está mal.
+
+00:12:00 --> 00:12:05 Orador 6
+Aísla los componentes hasta encontrar el hardware o el PIN defectuoso.
