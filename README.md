@@ -10,7 +10,8 @@ Este repositorio comprende todas las actividades que se llevarán a cabo para el
 * **Potencia Aislada:** Banco de baterías dedicado para tracción y reguladores LM7805 en paralelo para la lógica y servomotores, previniendo caídas de tensión.
 
 # Evidencia en Video | Etapa 4 (Final)
-Se adjunta un video demostrando el proceso, conexiones y funcionamiento del proyecto final (dar click a la imagen): 
+Se adjunta un video demostrando el proceso, conexiones y funcionamiento del proyecto final (dar click a la imagen):
+Debido al peso máximo de 25mb de Github, hemos decidido mostrarlo aquí.
 <div align="center">
 
 [![Proyecto Carrito Recolector de Objetos](https://img.youtube.com/vi/rHxLL-gxWDA/0.jpg)](https://www.youtube.com/watch?v=rHxLL-gxWDA)
