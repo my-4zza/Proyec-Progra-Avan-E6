@@ -94,14 +94,9 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `scripts/build_and_upload.sh` | v1.0.0 -> v1.0.1 | Actualización de variable CARPETA_SKETCH para apuntar a carro_recolectorV1.5.ino. | 15/06/2026 | Pérez González Azael (`my-4zza`) |
 | `Transcript.txt` | v1.6.0 | Adición de transcrit de miembro Santiago | 15/06/2026 | Alegría Ponce José Santiago (`AlegriaPonceJoseSantiago343`) |
 | `README.md` | v3.0 -> v3.1 | Se especificó el motivo de presentar el video en formato enlace. | 15/06/2026 | Pérez González Azael (`my-4zza`)
-| :--- | :--- | :--- | :--- | :--- |
-| :--- | :--- | :--- | :--- | :--- |
-| :--- | :--- | :--- | :--- | :--- |
-| :--- | :--- | :--- | :--- | :--- |
-| :--- | :--- | :--- | :--- | :--- |
-| :--- | :--- | :--- | :--- | :--- |
-| :--- | :--- | :--- | :--- | :--- |
-| :--- | :--- | :--- | :--- | :--- |
-| :--- | :--- | :--- | :--- | :--- |
-| :--- | :--- | :--- | :--- | :--- |
+| `final_video.srt` | v1.1.0 | Adicion de los subtitulos del miembro Antonio.| 15/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
+| `final_video.srt` | v1.2.0 | Adicion de los subtitulos del miembro Azael.| 15/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
+| `final_video.srt` | v1.3.0 | Adicion de los subtitulos del miembro Juan Calros.| 15/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
+| `final_video.srt` | v1.4.0 | Adicion de los subtitulos del miembro Alfredo.| 15/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
+| `final_video.srt` | v1.5.0 | Adicion de los subtitulos del miembro Jimmy.| 15/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | :--- | :--- | :--- | :--- | :--- |
