@@ -160,3 +160,27 @@ Bueno como recomendación para la parte del código siempre agreguen una línea 
 
 00:09:19 --> 00:09:23 Orador 4
 para evitar que el robot se quede congelado esperando una acción que nunca le va a llegar.
+
+00:09:24 --> 00:09:46 Orador 5 - Alfredo Cid Garcia
+Hola soy Alfredo, en este proyecto me toca diseñar la etapa final, la recolección de las piezas usando el módulo Electriman, esto sonaba mas sencillo, pero en el prototipo físico nos topamos con un límite mecánico, lo que nos paso fue que cuando intentábamos levantar una pieza con el brazo robótico totalmente estirado, el servomotor original simplemente no aguantaba,
+
+00:09:47 --> 00:09:51 Orador 5
+Por pura física, al tener el brazo extendido, el efecto palanca exigía un torque altísimo.
+
+00:09:52 --> 00:10:02 Orador 5
+El motor pedía tanta corriente de golpe para intentar levantar ese peso que terminaba absorbiendo la energía de la placa y el sistema colapsaba o el motor solo se quedaba zumbando.
+
+00:10:02 --> 00:10:10 Orador 5
+Analizando el problema, nos dimos cuenta de que nuestro atador estaba siendo sobreexplotado, así que tomamos la decisión de hacer una actualización de hardware.
+
+00:10:11 --> 00:10:16 Orador 5
+Retiramos los servomotores originales y los cambiamos por los servos ** grandes al totorque.
+
+00:10:17 --> 00:10:25 Orador 5
+Este cambio nos dio los kilogramos de fuerza necesaria y la robustez mecánica para levantar la carga sin generar estos picos mortales de consumo eléctrico.
+
+00:10:26 --> 00:10:35 Orador 5
+Con estos nuevos motores el ensamble funciona perfecto, el imán demostró tener la fuerza para sujetar la pieza, incluso soportando la fuerza centrífuca al girar el chasis.
+
+00:10:36 --> 00:10:47 Orador 5
+Y como conclusión, pues la decisión es que calcular bien el torque desde la etapa de diseño espiritual, para que los actuadores funcionen correctamente y no lleguemos a quemar los componentes.
