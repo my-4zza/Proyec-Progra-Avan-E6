@@ -99,4 +99,4 @@ Registro de versiones, modificaciones en la documentación y actualizaciones en 
 | `final_video.srt` | v1.3.0 | Adicion de los subtitulos del miembro Juan Calros.| 15/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `final_video.srt` | v1.4.0 | Adicion de los subtitulos del miembro Alfredo.| 15/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
 | `final_video.srt` | v1.5.0 | Adicion de los subtitulos del miembro Jimmy.| 15/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
-| :--- | :--- | :--- | :--- | :--- |
+| `transcript.txt` | v2.0.0 | Se corrigio el formato por completo. | 15/06/2026 | Alarcón Galván Jimmy Loucioss (`Jimmy-alarcon`) |
