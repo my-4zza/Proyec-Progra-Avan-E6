@@ -115,3 +115,48 @@ La solución fue ajustar la variable global de la tracción a un valor PWM de 11
 
 00:06:55 --> 00:07:18 Orador 3
 Principalmente esto nos dejó la lección aprendida y recomendación, la principal lección es que en robótica autónoma más velocidad no es mejor, la recomendación es calibrar siempre la velocidad de tracción al ritmo de procesamiento de sus sensores para que el cerebro le de tiempo de reaccionar y eso es todo.
+
+00:07:19 --> 00:07:21 Orador 4 - Jose Santiago Alegria Ponce
+Hey buenas a todos, soy José Santiago
+
+00:07:22 --> 00:07:31 Orador 4
+y les voy a explicar la parte de navegación lógica del sensor ultrasónico, en este caso usamos el tipo HCSR04.
+
+00:07:32 --> 00:07:50 Orador 4
+Para hacer esto posible, en la pantalla pueden ver la función de leer distancia, en lugar de hacer que el sensor hiciera un barrido tipo radar, lo cual generaba lecturas erráticas por la vibración del chasis, decidimos mantenerlo fijo hacia el frente y añadirle condiciones o zonas de alerta,
+
+00:07:51 --> 00:07:53 Orador 4
+mediante condicionales.
+
+00:07:54 --> 00:07:57 Orador 4
+Pero ¿Cuáles son los condicionales que tiene nuestro sensor ultrasónico?
+
+00:07:58 --> 00:08:12 Orador 4
+Bueno implementamos unas zonas de evasiones, las primeras son para las distancias de entre 10 y 25 centímetros, los cuales serían para cuando se encuentra con una clase de pared y va a girar hacia los lados para encontrar una salida.
+
+00:08:13 --> 00:08:20 Orador 4
+Después la zona de recolección que sería algo menor a esos 10 centímetros de distancia.
+
+00:08:21 --> 00:08:24 Orador 4
+Con alguna de las condicionales tuvimos bastantes dificultades.
+
+00:08:25 --> 00:08:34 Orador 4
+Por ejemplo, algunas veces el carrito intentaba recoger a la distancia de la pared, o sea, una distancia a la que no le corresponde, o se acercaba mucho y chocaba.
+
+00:08:35 --> 00:08:38 Orador 4
+Lo que hicimos para solucionarlo fue afinar los umbrales de distancia en el loop.
+
+00:08:39 --> 00:08:49 Orador 4
+Por ejemplo, ahora si detecta algo de menos de 10 cm que se haría en el umbral de del electroimán, estos los motores del carrito se detienen.
+
+00:08:50 --> 00:08:56 Orador 4
+se activa la rutina del electroimán, recoge el objeto y gira el chorice completo para apartarlo del camino.
+
+00:08:57 --> 00:09:10 Orador 4
+Bueno para terminar con mi parte, algunas de las lecciones que aprendí al configurar este sensor fue que va a variar mucho la respuesta que este va a tener si compras uno muy caro o uno muy barato, esto va a implicar mucho en el ruido de rebote que estos tienen.
+
+00:09:11 --> 00:09:18 Orador 4
+Bueno como recomendación para la parte del código siempre agreguen una línea de seguridad para filtrar lecturas nulas, como cuando la duración del pulso devuelve cero, para 
+
+00:09:19 --> 00:09:23 Orador 4
+para evitar que el robot se quede congelado esperando una acción que nunca le va a llegar.
