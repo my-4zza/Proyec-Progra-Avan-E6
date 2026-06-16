@@ -1,226 +1,69 @@
 Transcripcion del equipo.
 
-00:00:01 Orador 1 - Antonio de Jesus Portilla Duran
 Que tal muy buenas, bueno les vamos a explicar sobre nuestro proyecto en este caso el coche recolector de objetos elaborado por el equipo 6.
-
-00:00:13 Orador 1
-Para comenzar mi nombre es Antonio de Jesús Portilla y bueno en este proyecto me encargue del diseño y la arquitectura del hardware del coche recolector y bueno el objetivo principal fue garantizar que el cerebro del robot, del puente H,
-
-00:00:29 Orador 1
-la tracción de los motores, así como los motores de brazo mecánico tuvieran un buen suministro de energía tanto estable y que no interfirieran entre ellos.
-
-00:00:41 Orador 1
-Para nuestra parte de hardware y conexiones en nuestro desarrollo, sabemos que alimentar el sistema con una sola pila, por ejemplo ocupamos baterías de 11 voltios, vimos que alimentar todo, tanto motores como sistemas
-
-00:00:57 Orador 1
-podía causar muchas bajas en cuestión de alimentación, más que nada por el L298N y pues en general los motores de tracción.
-
-00:01:07 Orador 1
-Y bueno por otro lado para proteger el Arduino y más que nada alimentar los servos del brazo, implementé lo que es un sistema de regulación utilizando los integrados LM7805, esto pues nos garantizó un voltaje limpio de 5 voltios,
-
-00:01:27 Orador 1
-para la lógica y el control fino de las articulaciones.
-
-00:01:31 Orador 1
+Para comenzar mi nombre es Antonio de Jesús Portilla y bueno en este proyecto me encargue del diseño y la arquitectura del hardware del coche recolector y bueno el objetivo principal fue garantizar que el cerebro del robot, del puente H, la tracción de los motores, así como los motores de brazo mecánico tuvieran un buen suministro de energía tanto estable y que no interfirieran entre ellos.
+Para nuestra parte de hardware y conexiones en nuestro desarrollo, sabemos que alimentar el sistema con una sola pila, por ejemplo ocupamos baterías de 11 voltios, vimos que alimentar todo, tanto motores como sistemas podía causar muchas bajas en cuestión de alimentación, más que nada por el L298N y pues en general los motores de tracción.
+Y bueno por otro lado para proteger el Arduino y más que nada alimentar los servos del brazo, implementé lo que es un sistema de regulación utilizando los integrados LM7805, esto pues nos garantizó un voltaje limpio de 5 voltios, para la lógica y el control fino de las articulaciones.
 Y bien, en nuestra parte de resultados y pruebas, al poner la electrónica a prueba en la pista, la saturación de voltajes funcionó.
-
-00:01:40 Orador 1
 El Arduino nunca sufrió reinicios por caídas de tensión en cuanto el coche iniciaba, y bueno el módulo Electroman recibía las señales para atrapar los objetos sin generar algunas interferencias.
-
-00:01:27 Orador 1
 para la lógica y el control fino de las articulaciones.
-
-00:01:31 Orador 1
 Y bien, en nuestra parte de resultados y pruebas, al poner la electrónica a prueba en la pista, la saturación de voltajes funcionó.
-
-00:01:40 Orador 1
 El Arduino nunca sufrió reinicios por caídas de tensión en cuanto el coche iniciaba, y bueno el módulo Electroman recibía las señales para atrapar los objetos sin generar algunas interferencias.
-
-00:02:00 Orador 1
 Y bien en la parte de dificultades y soluciones lo que tuvimos fue el reto más técnico que tuvimos, fue que nos enfrentamos a lo que es a la calibración del brazo robótico y pues al intentar mover el hombro o el alcance al mismo tiempo vimos que existían picos de intensidad.
-
-00:02:21 Orador 1
 los cuales atoraba el LM7805 y entraba en protección térmica.
-
-00:02:28 Orador 1
 Entonces esto apagaba el sistema o dejaba de funcionar.
-
-00:02:33 Orador 1
 Entonces lo que hicimos fue resolver tanto de manera hardware como software, así ajustando lo que es la mecánica para evitar las fricciones.
-
-00:02:44 Orador 1
-Aplicamos una modificación de código, aislando de movimientos para que el brazo primero se estirara y
-
-00:02:51 Orador 1
-luego bajara y finalmente recogiera antes de subir, eso dividió el consumo de amperaje a la mitad.
-
-00:03:00 Orador 1
+Aplicamos una modificación de código, aislando de movimientos para que el brazo primero se estirara y luego bajara y finalmente recogiera antes de subir, eso dividió el consumo de amperaje a la mitad.
 Y bueno como las lecciones aprendidas en todo lo que hicimos en nuestro proyecto, fue principalmente que a pesar de que tengas un buen código, si el hardware no aguanta, obviamente se va a ahogar y pues principalmente ya no va a funcionar, o puede que tenga algunos problemas.
-
-00:03:18 Orador 1
 Como aprendizaje o recomendación sería que hay que aislar bien las partes de control con las partes de potencia para evitar así algún problema o accidente.
 
-00:03:30 Orador 2 - Azael Pérez González
 Hola, mi nombre es Azael Pérez González y mi rol en este proyecto fue el diseño mecánico y la cinemática de las articulaciones del carrito.
-
-00:03:37 Orador 2
 Mi objetivo fue crear una estructura de madera estable que pudiera soportar los movimientos bruscos sin perder el centro de gravedad.
-
-00:03:44 Orador 2
-dicho brazo robótico utilizamos un enfoque de potencia dividida, en la pantalla podemos observar la base y el hombro, anclamos el servomotor MG995 directamente al hombro, porque es la articulación que exige mayor torque para levantar todo el ensamble.
-
-00:04:02 Orador 2
+Dicho brazo robótico utilizamos un enfoque de potencia dividida, en la pantalla podemos observar la base y el hombro, anclamos el servomotor MG995 directamente al hombro, porque es la articulación que exige mayor torque para levantar todo el ensamble.
 Para el alcance y el giro de la base implementamos motores Mod 110 que nos brindan la precisión necesaria para la recolección.
-
-00:04:09 Orador 2
-En
-
-00:04:10 Orador 2
-Durante las pruebas de movimiento notamos que si el brazo quedaba extendido, bloqueaba el campo de visión del sensor ultrasónico frontal, lo que presentaba dificultades.
-
-00:04:19 Orador 2
+En durante las pruebas de movimiento notamos que si el brazo quedaba extendido, bloqueaba el campo de visión del sensor ultrasónico frontal, lo que presentaba dificultades.
 El mayor reto fue la colisión física de la madera y la obstrucción del radar.
-
-00:04:23 Orador 2
 Lo resolvimos programando un modo más lento, más ajustado en cuanto a la velocidad.
-
-00:04:30 Orador 2
 Los límites de los servos se ajustaron a ángulos extremos pero seguros.
+Hombro a 160 grados y el alcance a 40 grados, esto repliega el brazo por completo hacia arriba y hacia atrás, dejando el horizonte 100% libre para la navegación del carrito.
+La lección más grande que aprendimos en esto es que el diseño de las piezas físicas debe ir de la mano con el código, una recomendación para futuros proyectos es siempre verificar la fricción de las uniones mecánicas, ya que apretar demasiado un tornillo puede disparar el consumo de corriente y quemar un motor, que fue también uno de los problemas que se tuvieron durante el proyecto.
 
-00:04:34 Orador 2
-hombro a 160 grados y el alcance a 40 grados, esto repliega el brazo por completo hacia arriba y hacia atrás, dejando el horizonte 100% libre para la navegación del carrito.
-
-00:04:47 Orador 2
-La lección más grande que aprendimos en esto es que el diseño de las piezas físicas debe ir de la mano con el código, una recomendación para futuros proyectos es siempre verificar la fricción de las uniones mecánicas, ya
-
-00:04:59 Orador 2
-ya que apretar demasiado un tornillo puede disparar el consumo de corriente y quemar un motor, que fue también uno de los problemas que se tuvieron durante el proyecto.
-
-00:05:08 Orador 3 - Juan Carlos Hernandez Garcia
 Es Juan Carlos y me encargue del sistema de tracción y desplazamiento del vehículo, controlando los motores de corriente continua a través del driver L298N.
-
-00:05:24 Orador 3
-Principalmente en el desarrollo es el código y el hardware,
-
-00:05:28 Orador 3
-En pantalla se muestran algunas funciones del movimiento como avanzar y girar derecha, girar derecha principalmente.
-
-00:05:37 Orador 3
-El control se realiza mediante módulos como el ancho de los pulsos PWM desde el Arduino hacia los pines N/A y ENB del puente H, permitiéndose controlar la velocidad exactamente en la pantalla de forma independiente al hogar
-
-00:05:57 Orador 3
-tirar sobre su propio eje.
-
-00:06:00 Orador 3
+Principalmente en el desarrollo es el código y el hardware, en pantalla se muestran algunas funciones del movimiento como avanzar y girar derecha, girar derecha principalmente.
+El control se realiza mediante módulos como el ancho de los pulsos PWM desde el Arduino hacia los pines N/A y ENB del puente H, permitiéndose controlar la velocidad exactamente en la pantalla de forma independiente al lograr girar sobre su propio eje.
 Resultado de las pruebas: estos fueron los resultados, inicialmente el carrito se movía demasiado rápido, el peso de la batería y la estructura de madera generaba una inercia que había que el vehículo tambalear principalmente provocando que el sensor ultrasónico diera lecturas falsas apuntando al suelo.
-
-00:06:22 Orador 3
-Dificultades y soluciones: el
-
-00:06:25 Orador 3
-El reto fue encontrar el equilibrio contra la fuerza para moverse el chasis y la estabilidad para los sensores.
-
-00:06:32 Orador 3
+Dificultades y soluciones: el reto fue encontrar el equilibrio contra la fuerza para moverse el chasis y la estabilidad para los sensores.
 La solución fue ajustar la variable global de la tracción a un valor PWM de 110 con esto sacrificamos velocidad, pero ganamos un movimiento similar al de un tanque lento, continuo y extremadamente estable.
-
-00:06:55 Orador 3
 Principalmente esto nos dejó la lección aprendida y recomendación, la principal lección es que en robótica autónoma más velocidad no es mejor, la recomendación es calibrar siempre la velocidad de tracción al ritmo de procesamiento de sus sensores para que el cerebro le de tiempo de reaccionar y eso es todo.
 
-00:07:19 Orador 4 - Jose Santiago Alegria Ponce
-
-Hey buenas a todos, soy José Santiago
-
-00:07:22 Orador 4
-y les voy a explicar la parte de navegación lógica del sensor ultrasónico, en este caso usamos el tipo HCSR04.
-
-00:07:32 Orador 4
-Para hacer esto posible, en la pantalla pueden ver la función de leer distancia, en lugar de hacer que el sensor hiciera un barrido tipo radar, lo cual generaba lecturas erráticas por la vibración del chasis, decidimos mantenerlo fijo hacia el frente y añadirle condiciones o zonas de alerta,
-
-00:07:51 Orador 4
-mediante condicionales.
-
-00:07:54 Orador 4
+Hey buenas a todos, soy José Santiago y les voy a explicar la parte de navegación lógica del sensor ultrasónico, en este caso usamos el tipo HCSR04.
+Para hacer esto posible, en la pantalla pueden ver la función de leer distancia, en lugar de hacer que el sensor hiciera un barrido tipo radar, lo cual generaba lecturas erráticas por la vibración del chasis, decidimos mantenerlo fijo hacia el frente y añadirle condiciones o zonas de alerta, mediante condicionales.
 Pero ¿Cuáles son los condicionales que tiene nuestro sensor ultrasónico?
-
-00:07:58 Orador 4
 Bueno implementamos unas zonas de evasiones, las primeras son para las distancias de entre 10 y 25 centímetros, los cuales serían para cuando se encuentra con una clase de pared y va a girar hacia los lados para encontrar una salida.
-
-00:08:13 Orador 4
 Después la zona de recolección que sería algo menor a esos 10 centímetros de distancia.
-
-00:08:21 Orador 4
 Con alguna de las condicionales tuvimos bastantes dificultades.
-00:08:25 Orador 4
 Por ejemplo, algunas veces el carrito intentaba recoger a la distancia de la pared, o sea, una distancia a la que no le corresponde, o se acercaba mucho y chocaba.
-
-00:08:35 Orador 4
 Lo que hicimos para solucionarlo fue afinar los umbrales de distancia en el loop.
-
-00:08:39 Orador 4
 Por ejemplo, ahora si detecta algo de menos de 10 cm que se haría en el umbral de del electroimán, estos los motores del carrito se detienen.
-
-00:08:50 Orador 4
 se activa la rutina del electroimán, recoge el objeto y gira el chorice completo para apartarlo del camino.
-
-00:08:57 Orador 4
 Bueno para terminar con mi parte, algunas de las lecciones que aprendí al configurar este sensor fue que va a variar mucho la respuesta que este va a tener si compras uno muy caro o uno muy barato, esto va a implicar mucho en el ruido de rebote que estos tienen.
-
-00:09:11 Orador 4
 Bueno como recomendación para la parte del código siempre agreguen una línea de seguridad para filtrar lecturas nulas, como cuando la duración del pulso devuelve cero, para 
-
-00:09:19 Orador 4
 para evitar que el robot se quede congelado esperando una acción que nunca le va a llegar.
 
-00:09:24 Orador 5 - Alfredo Cid Garcia
-Hola soy Alfredo, en este proyecto me toca diseñar la etapa final, la recolección de las piezas usando el módulo Electriman, esto sonaba mas sencillo, pero en el prototipo físico nos topamos con un límite mecánico, lo que nos paso fue que cuando intentábamos levantar una pieza con el brazo robótico totalmente estirado, el servomotor original simplemente no aguantaba,
-
-00:09:47 Orador 5
-Por pura física, al tener el brazo extendido, el efecto palanca exigía un torque altísimo.
-
-00:09:52 Orador 5
+Hola soy Alfredo, en este proyecto me toca diseñar la etapa final, la recolección de las piezas usando el módulo Electriman, esto sonaba mas sencillo, pero en el prototipo físico nos topamos con un límite mecánico, lo que nos paso fue que cuando intentábamos levantar una pieza con el brazo robótico totalmente estirado, el servomotor original simplemente no aguantaba, por pura física, al tener el brazo extendido, el efecto palanca exigía un torque altísimo.
 El motor pedía tanta corriente de golpe para intentar levantar ese peso que terminaba absorbiendo la energía de la placa y el sistema colapsaba o el motor solo se quedaba zumbando.
-
-00:10:02 Orador 5
 Analizando el problema, nos dimos cuenta de que nuestro atador estaba siendo sobreexplotado, así que tomamos la decisión de hacer una actualización de hardware.
-
-00:10:11 Orador 5
 Retiramos los servomotores originales y los cambiamos por los servos ****** grandes al totorque.
-
-00:10:17 Orador 5
 Este cambio nos dio los kilogramos de fuerza necesaria y la robustez mecánica para levantar la carga sin generar estos picos mortales de consumo eléctrico.
-
-00:10:26 Orador 5
 Con estos nuevos motores el ensamble funciona perfecto, el imán demostró tener la fuerza para sujetar la pieza, incluso soportando la fuerza centrífuca al girar el chasis.
-
-00:10:36 Orador 5
 Y como conclusión, pues la decisión es que calcular bien el torque desde la etapa de diseño espiritual, para que los actuadores funcionen correctamente y no lleguemos a quemar los componentes.
 
-00:10:48 Orador 6 - Jimmy Loucioss Alarcón Galván
 Hola, mi nombre es Jimmy y mi error fue la integración final de todas las fases anteriores y la resolución de fallas en las pruebas hechas.
-
-00:10:55 Orador 6
 Una vez que tuvimos todos los sistemas listos, mi trabajo fue ensamblar a las partes y hacer pruebas.
-
-00:11:00 Orador 6
 Como pueden ver en la pantalla, realizamos pruebas de cada sistema creando códigos que solo movían un componente a la vez para detectar fallas de hardware.
-
-00:11:07 Orador 6
 Así mismo logramos integrar el movimiento con el puente H, el sensor ultrasónico, el movimiento del brazo y el electroimán en un solo código, de manera continua que permitirá el carrito operar de manera 100% autónoma y estable.
-
-00:11:20 Orador 6
-Y en la etapa final nos enfrentamos a un fallo crítico de funcionamiento,
-
-00:11:25 Orador 6
-El motor de la base no respondía a las instrucciones del arduino, a pesar de que la batería entregaba 7.4 volts y aislando el código descubrimos que el problema era físico, ejecutamos un salto de pines de emergencia resignando el control del servo y del pin analógico A2 al A3 en el código base, lo cual devolvió la vida al ensamblaje inmediatamente.
-
-00:11:48 Orador 6
-Y la mayor lección aprendida es el valor del diagnóstico modular
-
-00:11:52 Orador 6
-Mi documentación para la instrumentación electrónica es si el sistema falla, divide y vencerás.
-
-00:11:57 Orador 6
+Y en la etapa final nos enfrentamos a un fallo crítico de funcionamiento, el motor de la base no respondía a las instrucciones del arduino, a pesar de que la batería entregaba 7.4 volts y aislando el código descubrimos que el problema era físico, ejecutamos un salto de pines de emergencia resignando el control del servo y del pin analógico A2 al A3 en el código base, lo cual devolvió la vida al ensamblaje inmediatamente.
+Y la mayor lección aprendida es el valor del diagnóstico modular.
+Mi recomendacion para la instrumentación electrónica es si el sistema falla, divide y vencerás.
 Nunca asumas que todo el código está mal.
-
-00:12:00 Orador 6
 Aísla los componentes hasta encontrar el hardware o el PIN defectuoso.
